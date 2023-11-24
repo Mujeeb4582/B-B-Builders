@@ -8,7 +8,7 @@ import CounterUp from '@/components/Counter/index';
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-center pl-4 lg:pl-24 p-12  bg-gray-100">
+      <div className="container flex flex-col lg:flex-row items-center pl-4 lg:pl-24 p-12 mt-24">
         <div className="w-full sm:w-1/2">
           <Slider />
         </div>
@@ -19,8 +19,7 @@ const Home = () => {
             <div>and Development</div>
           </h1>
           <p className="text-base lg:text-lg mb-4 lg:mb-2">
-            and the Exclusive Representative of NUUKO POWER Solar Brand in the
-            Country
+            and the Exclusive Representative of Brand in the Country
           </p>
 
           {/* <div className="flex flex-wrap justify-center lg:justify-start">

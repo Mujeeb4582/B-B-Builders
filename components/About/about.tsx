@@ -8,9 +8,11 @@ const About = () => {
         <div className="w-full sm:w-1/2 text-center lg:text-left lg:mr-4">
           {' '}
           {/* Added 'lg:mr-4' for margin */}
-          <h1 className="text-white text-2xl lg:text-4xl px-12">About</h1>
+          <h1 className="text-white text-2xl lg:text-4xl font-bold px-12">
+            About
+          </h1>
           <h1 className="text-2xl lg:text-4xl font-bold  text-white px-12 py-3">
-            B & B BUILDERS 
+            B & B BUILDERS
           </h1>
           <p className="text-base lg:text-lg px-12 py-6 text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

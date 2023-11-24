@@ -7,7 +7,7 @@ import AboutCarousel from '../About/AboutCrousel';
 import Image from 'next/image';
 
 const AboutSlider = () => {
-  const images = [ pic1, pic2, pic3, pic4];
+  const images = [pic1, pic2, pic3, pic4];
   return (
     <div>
       <AboutCarousel loop>

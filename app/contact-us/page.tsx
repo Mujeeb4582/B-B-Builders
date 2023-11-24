@@ -1,3 +1,5 @@
+'use client';
+
 import dynamic from 'next/dynamic';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 
@@ -8,14 +10,16 @@ const GoogleMap = dynamic(() => import('@/components/Map'), {
 
 const ContactUs = () => {
   const iconStyle = {
-    color: '#ed2625',
+    color: '#c86500',
   };
   return (
-    <div className="container mx-auto p-8">
+    <div className="container mx-auto p-8 mt-24">
       {/* Contact form */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h2 className="text-3xl font-semibold mb-2">Get in Touch</h2>
+          <h2 className="text-3xl font-semibold mb-2 text-[#c86500]">
+            Get in Touch
+          </h2>
           <p className="text-gray-600 mb-4">
             Feel free to reach out to us for any inquiries or questions.
           </p>
@@ -68,7 +72,7 @@ const ContactUs = () => {
             </div>
             <button
               type="submit"
-              className="bg-red-500 text-white p-2 rounded-md hover:bg-red-600 transition duration-300"
+              className="bg-[#c86500] text-white p-2 rounded-md hover:bg-[#703b04] transition duration-300"
             >
               Send Message
             </button>

@@ -14,7 +14,7 @@ import {
 
 const styles = {
   navLinks:
-    ' ml-10 uppercase text-[#0C3D90] border-b border-white hover:underline hovor:text-[#FF7C24] ',
+    ' ml-10 uppercase text-amber-700 border-b border-white hover:text-amber-900 ',
 };
 
 function Header() {
@@ -22,7 +22,7 @@ function Header() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
     <header>
-      <nav className="w-full h-24 shadow-xl bg-white px-4">
+      <nav className="w-full h-24 shadow-xl bg-white px-4 fixed w-full z-10 top-0 ">
         {/* Desktop Menu */}
         <div className="flex items-center justify-between h-24 px-4">
           <Link href="/">
@@ -61,7 +61,7 @@ function Header() {
           {/* Mobile Menu */}
 
           <div onClick={toggleMenu} className="sm:hidden cursor-pointer pl-24 ">
-            <BsList className="h-8 w-8 text-[#0C3D90]" />
+            <BsList className="h-8 w-8 text-amber-700" />
           </div>
         </div>
         <div
@@ -73,7 +73,7 @@ function Header() {
         >
           <div className="flex w-full items-center justify-end">
             <div onClick={toggleMenu} className="cursor-pointer">
-              <BsX className="h-8 w-8 text-[#0C3D90]" />
+              <BsX className="h-8 w-8 text-amber-700" />
             </div>
           </div>
           {/* Mobile Menu Links */}
@@ -81,37 +81,37 @@ function Header() {
             <ul>
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 hover:underline hovor:text-[#0C3D90] text-[#0C3D90]"
+                className="py-4 hover:underline hovor:text-amber-700 text-amber-700"
               >
                 <Link href="/home">Home</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-[#0C3D90]"
+                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
                 <Link href="/about">Who We Are</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-[#0C3D90]"
+                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
                 <Link href="/contact">What We Do</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-[#0C3D90]"
+                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
                 <Link href="/contact">Services</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-[#0C3D90]"
+                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
                 <Link href="/contact">Our past performace</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-[#0C3D90]"
+                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
                 <Link href="/contact">Contact Us</Link>
               </li>
