@@ -13,7 +13,7 @@ const ProjectsDots = ({ itemsLength, selectedIndex }: Props) => {
         return (
           <div
             className={classNames({
-              'h-1 justify-center px-5 mt-10  rounded-full transition-all duration-300 bg-[#0C3D90]':
+              'h-1 justify-center px-5 mt-10  rounded-full transition-all duration-300 bg-[#7C4700]':
                 true,
               // tune down the opacity if slide is not selected
               'opacity-50': !selected,
