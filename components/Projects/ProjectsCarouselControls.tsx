@@ -18,9 +18,9 @@ const ProjectsCarouselControls = (props: Props) => {
         }}
         disabled={!props.canScrollPrev}
         className={classNames({
-          'px-4 py-2 text-white': true,
-          'bg-[#FF7C24]': !props.canScrollPrev,
-          'bg-indigo-400': props.canScrollPrev,
+          'px-4  py-2 text-white': true,
+          'bg-indigo-400': !props.canScrollNext,
+          'bg-[#7C4700]': props.canScrollNext,
         })}
       >
         Prev
@@ -34,8 +34,8 @@ const ProjectsCarouselControls = (props: Props) => {
         disabled={!props.canScrollNext}
         className={classNames({
           'px-4 py-2 text-white ': true,
-          'bg-[#FF7C24]': !props.canScrollNext,
-          'bg-indigo-400': props.canScrollNext,
+          'bg-indigo-400': !props.canScrollNext,
+          'bg-[#7C4700]': props.canScrollNext,
         })}
       >
         Next

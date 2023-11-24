@@ -1,9 +1,9 @@
 'use client';
-import pic from '../../public/image/pic.webp';
+import pic from '../../public/image/pic.jpg';
 import pic1 from '../../public/image/pic1.jpg';
-import pic2 from '../../public/image/pic2.webp';
-import pic3 from '../../public/image/pic3.jpeg';
-import pic4 from '../../public/image/pic4.jpeg';
+import pic2 from '../../public/image/pic2.jpg';
+import pic3 from '../../public/image/pic3.jpg';
+import pic4 from '../../public/image/pic4.jpg';
 import logo from '../../public/image/logo.png';
 import ServicesCarousel from './Carousel';
 import Image from 'next/image';
