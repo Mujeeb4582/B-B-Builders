@@ -36,27 +36,25 @@ function Header() {
           <div className="text-[#FF7C24] hidden sm:flex">
             <ul className="hidden sm:flex">
               <li className={styles.navLinks}>
-                <Link href="/home">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li className={styles.navLinks}>
-                {' '}
-                <Link href="/">Who We Are</Link>
+                <Link href="/who-we-are">Who We Are</Link>
               </li>
               <li className={styles.navLinks}>
-                {' '}
-                <Link href="/">What We Do</Link>
+                <Link href="/what-we-do">What we do</Link>
               </li>
               <li className={styles.navLinks}>
-                {' '}
-                <Link href="/">Services</Link>
+                <Link href="/apartments">Apartments</Link>
               </li>
               <li className={styles.navLinks}>
-                {' '}
-                <Link href="/">Our Past performace</Link>
+                <Link href="/amenities">Amenities</Link>
               </li>
               <li className={styles.navLinks}>
-                {' '}
-                <Link href="/">Contact Us</Link>
+                <Link href="/our-past-performance">Our past performance</Link>
+              </li>
+              <li className={styles.navLinks}>
+                <Link href="/contact-us">Contact Us</Link>
               </li>
             </ul>
           </div>
