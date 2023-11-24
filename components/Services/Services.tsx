@@ -5,7 +5,7 @@ const Services = () => {
     <>
       <div className="py-5 font-bold text-4xl">
         Product and{' '}
-        <span className="text-[#FF7C24] font-bold text-4xl">Services</span>
+        <span className="text-[#7C4700] font-bold text-4xl">Services</span>
       </div>
       <ServicesSlider />
     </>
