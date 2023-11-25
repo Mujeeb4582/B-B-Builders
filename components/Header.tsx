@@ -83,37 +83,43 @@ function Header() {
                 onClick={() => setMenuOpen(false)}
                 className="py-4 hover:underline hovor:text-amber-700 text-amber-700"
               >
-                <Link href="/home">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
-                <Link href="/about">Who We Are</Link>
+                <Link href="/who-we-are">Who We Are</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
-                <Link href="/contact">What We Do</Link>
+                <Link href="/what-we-do">What We Do</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
-                <Link href="/contact">Services</Link>
+                <Link href="/apartments">Apartments</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
-                <Link href="/contact">Our past performace</Link>
+                <Link href="/amenities">Amenities</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/our-past-performance">Our past performace</Link>
+              </li>
+              <li
+                onClick={() => setMenuOpen(false)}
+                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
+              >
+                <Link href="/contact-us">Contact Us</Link>
               </li>
             </ul>
           </div>
