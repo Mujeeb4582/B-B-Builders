@@ -12,14 +12,17 @@ const Home = () => {
         <div className="w-full sm:w-1/2">
           <Slider />
         </div>
-        <div className="text-center lg:text-left p-12 pl-24">
+        <div className="text-center lg:text-left p-12 pl-24 w-full sm:w-1/2">
           <h1 className="text-2xl lg:text-4xl font-bold mb-4 lg:mb-8">
             An opportunity for
             <span className="text-[#7C4700]"> sustainable living </span>
             <div>and Development</div>
           </h1>
           <p className="text-base lg:text-lg mb-4 lg:mb-2">
-            and the Exclusive Representative of Brand in the Country
+            In the heart of Block-C Civic Center, Faisal Town, stands a recently
+            completed commercial high-rise. This modern structure offers a
+            variety of living and working spaces, including studios, 1- and
+            2-bedroom apartments, offices, and retail shops.
           </p>
 
           {/* <div className="flex flex-wrap justify-center lg:justify-start">
