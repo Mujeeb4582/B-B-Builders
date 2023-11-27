@@ -1,21 +1,26 @@
 'use client';
 
-import dynamic from 'next/dynamic';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+// import dynamic from 'next/dynamic';
+import {
+  FaMapMarkerAlt,
+  FaPhone,
+  FaEnvelope,
+  FaWhatsappSquare,
+} from 'react-icons/fa';
 
-const GoogleMap = dynamic(() => import('@/components/Map'), {
-  loading: () => <p>Loading Map...</p>,
-  ssr: false, // Disable server-side rendering
-});
+// const GoogleMap = dynamic(() => import('@/components/Map'), {
+//   loading: () => <p>Loading Map...</p>,
+//   ssr: false, // Disable server-side rendering
+// });
 
 const ContactUs = () => {
   const iconStyle = {
     color: '#c86500',
   };
   return (
-    <div className="container mx-auto p-8 mt-24">
+    <div className="container mx-auto lg:px-24 px-8 py-8 mt-24">
       {/* Contact form */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
         <div>
           <h2 className="text-3xl font-semibold mb-2 text-[#c86500]">
             Get in Touch
@@ -80,9 +85,9 @@ const ContactUs = () => {
         </div>
 
         {/* Display the Google Map */}
-        <div className="mt-8">
+        {/* <div className="mt-8">
           <GoogleMap />
-        </div>
+        </div> */}
       </div>
       {/* Contact information */}
       <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -90,21 +95,27 @@ const ContactUs = () => {
         <div className="bg-white p-4 rounded-md shadow-md">
           <FaMapMarkerAlt size={24} className="mb-2" style={iconStyle} />
           <h3 className="text-lg font-semibold mb-2">Address</h3>
-          <p className="text-gray-600">Your Company Address</p>
+          <p className="text-gray-600">
+            B & B Builders 4th Floor 44-E Plaza Fazal-e-Haq Road Blue-Area
+            Islamabad
+          </p>
         </div>
 
         {/* Phone card */}
         <div className="bg-white p-4 rounded-md shadow-md">
-          <FaPhone size={24} className="mb-2" style={iconStyle} />
+          <div className="flex mb-2 gap-3">
+            <FaWhatsappSquare size={24} style={iconStyle} />
+            <FaPhone size={24} style={iconStyle} />
+          </div>
           <h3 className="text-lg font-semibold mb-2">Phone</h3>
-          <p className="text-gray-600">Your Company Phone Number</p>
+          <p className="text-gray-600">0333-1125174</p>
         </div>
 
         {/* Email card */}
         <div className="bg-white p-4 rounded-md shadow-md">
           <FaEnvelope size={24} className="mb-2" style={iconStyle} />
           <h3 className="text-lg font-semibold mb-2">Email</h3>
-          <p className="text-gray-600">your.email@example.com</p>
+          <p className="text-gray-600">ceo@bandbuliders.com</p>
         </div>
       </div>
     </div>

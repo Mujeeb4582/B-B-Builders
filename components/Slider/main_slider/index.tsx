@@ -15,7 +15,7 @@ const Slider = () => {
           return (
             <div className="relative  flex-[0_0_100%]" key={i}>
               {/* use object-cover + fill since we don't know the height and width of the parent */}
-              <Image src={src} alt="alt" className="w-full h-full" />
+              <Image src={src} alt="alt" className="w-full h-144" />
             </div>
           );
         })}

@@ -4,25 +4,39 @@ import React from 'react';
 const About = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-center lg:pl-24 p-12 bg-[#c86500]">
+      <div className="flex flex-col lg:flex-row items-center p-12 bg-[#c86500]">
         <div className="w-full sm:w-1/2 text-center lg:text-left lg:mr-4">
           {' '}
           {/* Added 'lg:mr-4' for margin */}
-          <h1 className="text-white text-2xl lg:text-4xl font-bold px-12">
-            About
-          </h1>
-          <h1 className="text-2xl lg:text-4xl font-bold  text-white px-12 py-3">
+          <h1 className="text-white text-2xl lg:text-4xl font-bold">About</h1>
+          <h1 className="text-2xl lg:text-4xl font-bold  text-white py-3">
             B & B BUILDERS
           </h1>
-          <p className="text-base lg:text-lg px-12 py-6 text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor i
+          <p className="text-base lg:text-lg px-4 py-6 text-white text-justify">
+            B&B Builders entered the real estate market in 2018 in the
+            developing capital city of Islamabad, Pakistan, with the goal of
+            recreating urban living and commercial spaces. B&B Builders, which
+            specializes in commercial plots, shops, and offices, became
+            well-known for its dedication to modern architecture and building
+            techniques rapidly. The company successfully delivered over 50+
+            villas, setting high standards in the industry and proving its
+            commitment to quality and customer satisfaction with each one it
+            delivered. With the increasing demand for high-rise buildings, B&B
+            Builders rose to the occasion and set out to transform the look of
+            cities. <br />
+            <br /> Tower 1, a rising structure that will be handed over to its
+            owners in December 2023, is the completion of their best. Tower 1
+            represents B&B Builders&apos; focus on quality with its diligent
+            combination of design and service. Their grand project includes
+            Towers 2 and 3, which are expected to grace Islamabad&apos;s skyline
+            with an artistic blend of modern residential and commercial spaces.{' '}
+            <br /> <br /> As builders, B&B creates lifestyles in addition to
+            buildings. With a group of contemporary architects and a variety of
+            commercial plots, the company keeps up its contribution to the
+            architectural development of the city. In the real estate market of
+            Islamabad, B&B Builders is now known for their reliability and
+            sophistication—from developing creative designs to producing
+            structures that are ready for occupation.
           </p>
         </div>
         <div className="w-full sm:w-1/2">

@@ -1,32 +1,39 @@
 'use client';
 import Image from 'next/image';
-import CEO from '../../public/image/ceo.jpg';
+import CEO from '../../public/image/Abdullah.jpg';
 import { staffData } from '../../utils/staff';
 
 const WhoWeAre = () => {
   return (
     <div className="container mx-auto p-12 mt-24">
       {/* CEO Section */}
-      <div className="flex flex-col-reverse md:flex-row items-center mb-12 justify-items-center">
+      <div className="flex flex-col-reverse md:flex-row items-center mb-12 justify-items-center lg:h-128">
         {/* CEO Message */}
-        <div className="md:w-1/2 md:pr-8">
-          <h2 className="text-2xl font-semibold mb-4">Meet Our CEO</h2>
-          <p className="text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+        <div className="flex flex-col md:w-1/2 md:pr-8 bg-logo md:min-h-full bg-opacity-50 bg-gray content-center justify-center">
+          <h2 className="text-2xl md:text-4xl font-semibold mb-4">
+            Meet Our CEO
+          </h2>
+          <p className="text-gray-600 md:text-xl text-justify">
+            Founded in 2018, B&B Builders, underneath my management as an
+            electrical engineer, isn&apos;t always only a industrial creation
+            company; it&apos;s a passion-pushed journey to redefine modern
+            structure. Our dedication to precision and innovation has been the
+            cornerstone of our success. As we keep to shape skylines, B&B
+            Builders stands as a testament to the relentless pursuit of
+            excellence, in which each project reflects our willpower to
+            developing areas that inspire and undergo. Thank you for being a
+            part of our transformative story.
           </p>
         </div>
 
         {/* CEO Image */}
-        <div className="md:w-1/2 mb-4 md:mb-0">
+        <div className="md:w-1/2 mb-4 md:mb-0 h-full">
           <Image
             src={CEO} // Replace with the path to your CEO's image
             alt="CEO Image"
             width={700}
-            height={300}
-            className="rounded-md"
+            height={200}
+            className="rounded-md h-full"
           />
         </div>
       </div>

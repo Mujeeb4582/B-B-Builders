@@ -13,7 +13,7 @@ const AboutSlider = () => {
       <AboutCarousel loop>
         {images.map((src, i) => {
           return (
-            <div className="relative flex-[0_0_50%]" key={i}>
+            <div className="relative flex-[0_0_100%]" key={i}>
               {/* use object-cover + fill since we don't know the height and width of the parent */}
               <Image src={src} className="w-full h-full" alt="alt" />
             </div>

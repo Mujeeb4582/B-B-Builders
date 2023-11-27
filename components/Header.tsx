@@ -39,19 +39,19 @@ function Header() {
                 <Link href="/">Home</Link>
               </li>
               <li className={styles.navLinks}>
-                <Link href="/who-we-are">Who We Are</Link>
+                <Link href="/our-projects">Our projects</Link>
               </li>
-              <li className={styles.navLinks}>
-                <Link href="/what-we-do">What we do</Link>
-              </li>
-              <li className={styles.navLinks}>
+              {/* <li className={styles.navLinks}>
                 <Link href="/apartments">Apartments</Link>
               </li>
               <li className={styles.navLinks}>
                 <Link href="/amenities">Amenities</Link>
+              </li> */}
+              <li className={styles.navLinks}>
+                <Link href="/our-success">Our success</Link>
               </li>
               <li className={styles.navLinks}>
-                <Link href="/our-past-performance">Our past performance</Link>
+                <Link href="/who-we-are">Who We Are</Link>
               </li>
               <li className={styles.navLinks}>
                 <Link href="/contact-us">Contact Us</Link>
@@ -89,15 +89,9 @@ function Header() {
                 onClick={() => setMenuOpen(false)}
                 className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
-                <Link href="/who-we-are">Who We Are</Link>
+                <Link href="/our-projects">Our projects</Link>
               </li>
-              <li
-                onClick={() => setMenuOpen(false)}
-                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
-              >
-                <Link href="/what-we-do">What We Do</Link>
-              </li>
-              <li
+              {/* <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
@@ -108,12 +102,18 @@ function Header() {
                 className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
                 <Link href="/amenities">Amenities</Link>
+              </li> */}
+              <li
+                onClick={() => setMenuOpen(false)}
+                className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
+              >
+                <Link href="/our-success">Our success</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
-                <Link href="/our-past-performance">Our past performace</Link>
+                <Link href="/who-we-are">Who We Are</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
