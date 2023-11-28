@@ -4,7 +4,7 @@ import towerTwoPic1 from '../../public/image/tower-2/Tower-2-1.jpg';
 const RecentProject = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-center px-12">
+      <div className="flex flex-col lg:flex-row items-center px-12 bg-white">
         <div className="w-full sm:w-1/2 pt-8">
           {/* <RecentSlider /> */}
           <Image
