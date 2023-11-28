@@ -1,19 +1,17 @@
-import AboutSlider from './main_slide';
 import React from 'react';
+import AboutSlider from './main_slide';
 
 const About = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-center p-12 bg-[#c86500]">
-        <div className="w-full sm:w-1/2 text-center lg:text-left lg:mr-4">
-          {' '}
-          {/* Added 'lg:mr-4' for margin */}
+      <div className="flex flex-col lg:flex-row items-center p-8 sm:p-12 bg-[#c86500]">
+        <div className="w-full lg:w-1/2 sm:text-center lg:text-left lg:mr-4">
           <h1 className="text-white text-2xl lg:text-4xl font-bold">About</h1>
-          <h1 className="text-2xl lg:text-4xl font-bold  text-white py-3">
+          <h1 className="text-2xl sm:text-4xl font-bold  text-white sm:py-3">
             B & B BUILDERS
           </h1>
-          <p className="text-base lg:text-lg px-4 py-6 text-white text-justify">
-            B&B Builders entered the real estate market in 2018 in the
+          <p className="text-base sm:text-lg sm:pr-4 py-6 text-white text-justify">
+            B&B Builders entered the real estate market in 2019 in the
             developing capital city of Islamabad, Pakistan, with the goal of
             recreating urban living and commercial spaces. B&B Builders, which
             specializes in commercial plots, shops, and offices, became
@@ -39,7 +37,7 @@ const About = () => {
             structures that are ready for occupation.
           </p>
         </div>
-        <div className="w-full sm:w-1/2">
+        <div className="w-full lg:w-1/2 rounded-lg">
           <AboutSlider />
         </div>
       </div>
