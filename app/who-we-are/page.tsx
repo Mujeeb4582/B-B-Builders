@@ -10,10 +10,10 @@ const WhoWeAre = () => {
       <div className="flex flex-col-reverse md:flex-row items-center mb-12 justify-items-center lg:h-128">
         {/* CEO Message */}
         <div className="flex flex-col md:w-1/2 md:pr-8 bg-logo md:min-h-full bg-opacity-50 bg-gray content-center justify-center">
-          <h2 className="text-2xl md:text-4xl font-semibold mb-4">
+          <h2 className="text-2xl md:text-4xl font-semibold mb-4 text-headingText">
             Meet Our CEO
           </h2>
-          <p className="text-gray-600 md:text-xl text-justify">
+          <p className="md:text-xl text-justify text-headingText">
             Founded in 2018, B&B Builders, underneath my management as an
             electrical engineer, isn&apos;t always only a industrial creation
             company; it&apos;s a passion-pushed journey to redefine modern
