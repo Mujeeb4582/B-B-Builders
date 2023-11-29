@@ -4,7 +4,7 @@ import AboutSlider from './main_slide';
 const About = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-center p-8 sm:px-12 pl-24  bg-[#c86500]">
+      <div className="flex flex-col lg:flex-row items-center p-8 sm:px-12 bg-[#c86500]">
         <div className="w-full lg:w-1/2 sm:text-center lg:text-left lg:mr-4">
           <h1 className="text-white text-2xl lg:text-4xl font-bold">About</h1>
           <h1 className="text-2xl sm:text-4xl font-bold  text-white sm:py-3">
