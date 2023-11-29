@@ -14,6 +14,9 @@ const config: Config = {
         '160': '40rem',
         '176': '44rem',
       },
+      colors: {
+        headingText: '#c86500',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

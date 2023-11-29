@@ -22,7 +22,7 @@ const ContactUs = () => {
       {/* Contact form */}
       <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
         <div>
-          <h2 className="text-3xl font-semibold mb-2 text-[#c86500]">
+          <h2 className="text-3xl font-semibold mb-2 text-headingText">
             Get in Touch
           </h2>
           <p className="text-gray-600 mb-4">
@@ -77,7 +77,7 @@ const ContactUs = () => {
             </div>
             <button
               type="submit"
-              className="bg-[#c86500] text-white p-2 rounded-md hover:bg-[#703b04] transition duration-300"
+              className="bg-headingText text-white p-2 shadow-lg rounded-md hover:bg-[#703b04] transition duration-300"
             >
               Send Message
             </button>
@@ -92,9 +92,11 @@ const ContactUs = () => {
       {/* Contact information */}
       <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Address card */}
-        <div className="bg-white p-4 rounded-md shadow-md">
+        <div className="bg-gray-200 p-4 rounded-md shadow-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
           <FaMapMarkerAlt size={24} className="mb-2" style={iconStyle} />
-          <h3 className="text-lg font-semibold mb-2">Address</h3>
+          <h3 className="text-lg font-semibold mb-2 text-headingText">
+            Address
+          </h3>
           <p className="text-gray-600">
             B & B Builders 4th Floor 44-E Plaza Fazal-e-Haq Road Blue-Area
             Islamabad
@@ -102,19 +104,19 @@ const ContactUs = () => {
         </div>
 
         {/* Phone card */}
-        <div className="bg-white p-4 rounded-md shadow-md">
-          <div className="flex mb-2 gap-3">
+        <div className="bg-gray-200 p-4 rounded-md shadow-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <div className="flex mb-2 gap-3transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             <FaWhatsappSquare size={24} style={iconStyle} />
             <FaPhone size={24} style={iconStyle} />
           </div>
-          <h3 className="text-lg font-semibold mb-2">Phone</h3>
+          <h3 className="text-lg font-semibold mb-2 text-headingText">Phone</h3>
           <p className="text-gray-600">0333-1125174</p>
         </div>
 
         {/* Email card */}
-        <div className="bg-white p-4 rounded-md shadow-md">
+        <div className="bg-gray-200 p-4 rounded-md shadow-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
           <FaEnvelope size={24} className="mb-2" style={iconStyle} />
-          <h3 className="text-lg font-semibold mb-2">Email</h3>
+          <h3 className="text-lg font-semibold mb-2 text-headingText">Email</h3>
           <p className="text-gray-600">ceo@bandbuliders.com</p>
         </div>
       </div>
