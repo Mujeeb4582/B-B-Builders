@@ -23,3 +23,19 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.title-animations {
+  animation: blink 6s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
