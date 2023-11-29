@@ -10,7 +10,7 @@ import ReactSlider from '@/components/React-slider';
 const Home = () => {
   return (
     <>
-      <div className="container mt-24 pt-1">
+      <div className="container mt-2 pt-1">
         <div className="w-full ">
           <ReactSlider />
         </div>
