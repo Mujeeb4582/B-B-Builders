@@ -1,11 +1,13 @@
 import apartment from '../public/image/pic4.jpg';
 
 // Tower 2
-import Tower2_1 from '../public/image/tower-2/Tower-2-1.jpg';
+import Tower2_1 from '../public/image/tower-2/Tower-2-6.jpg';
 import Tower2_2 from '../public/image/tower-2/Tower-2-2.jpg';
 import Tower2_3 from '../public/image/tower-2/Tower-2-3.jpg';
 import Tower2_4 from '../public/image/tower-2/Tower-2-4.jpg';
 import Tower2_5 from '../public/image/tower-2/Tower-2-5.jpg';
+import Tower2_6 from '../public/image/tower-2/Tower-2-7.jpg';
+import Tower2_7 from '../public/image/tower-2/Tower-2-8.jpg';
 
 // Tower 2 apartments
 import studioPicT2 from '../public/image/tower-2/Tower-2-studio.jpg';
@@ -28,7 +30,15 @@ import CarParking from '../public/image/Amenities/car-parking.jpg';
 import FirFighting from '../public/image/Amenities/fire-fighting.jpg';
 import Electricity from '../public/image/Amenities/electricity.jpg';
 
-export const tower2Pics = [Tower2_1, Tower2_2, Tower2_3, Tower2_4, Tower2_5];
+export const tower2Pics = [
+  Tower2_1,
+  Tower2_2,
+  Tower2_3,
+  Tower2_4,
+  Tower2_5,
+  Tower2_6,
+  Tower2_7,
+];
 
 export const tower3Data = [
   {
