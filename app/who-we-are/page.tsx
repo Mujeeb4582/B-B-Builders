@@ -14,15 +14,15 @@ const WhoWeAre = () => {
             Meet Our CEO
           </h2>
           <p className="md:text-xl text-justify text-headingText">
-            Founded in 2018, B&B Builders, underneath my management as an
-            electrical engineer, isn&apos;t always only a industrial creation
-            company; it&apos;s a passion-pushed journey to redefine modern
-            structure. Our dedication to precision and innovation has been the
-            cornerstone of our success. As we keep to shape skylines, B&B
+            Founded in 2019, B&B Builders, underneath my management as an
+            electrical engineer, isn't always only a industrial creation
+            company; it's a passion-pushed journey to redefine modern
+            structure.&apos;Our dedication to precision and innovation has been
+            the cornerstone of our success. As we keep to shape skylines, B&B
             Builders stands as a testament to the relentless pursuit of
             excellence, in which each project reflects our willpower to
             developing areas that inspire and undergo. Thank you for being a
-            part of our transformative story.
+            part of our transformative story.
           </p>
         </div>
 

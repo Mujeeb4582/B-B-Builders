@@ -51,7 +51,7 @@ function Header() {
                 <Link href="/our-success">Our success</Link>
               </li>
               <li className={styles.navLinks}>
-                <Link href="/who-we-are">Who We Are</Link>
+                <Link href="/who-we-are">Our Team</Link>
               </li>
               <li className={styles.navLinks}>
                 <Link href="/contact-us">Contact Us</Link>
