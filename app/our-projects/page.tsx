@@ -28,13 +28,26 @@ const OurProjects = () => {
         <div>
           <SectionWithTitle title="B & B Tower-3">
             <p className="mt-3 text-xl md:text-2xl text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              ut corporis in accusantium nostrum praesentium, tempora voluptatum
-              iure earum nihil esse soluta nobis veritatis id itaque! Sint, unde
-              ratione. Saepe?Lorem, ipsum dolor sit amet consectetur adipisicing
-              elit. Placeat in voluptas tempore, itaque consectetur repudiandae
-              delectus. Ipsam aliquam nisi commodi nobis tempora iusto eveniet
-              saepe ut ipsum, laboriosam, vero quas.
+              Get ready to upgrade your living with B&B Builders' future
+              masterpiece that is Tower 3! This architectural masterpiece,
+              located in the heart of boulevard Faisal Hills, Islamabad,
+              elegantly mixes the greatest of commercial and residential
+              facilities over a broad 1 kanal covered space. Tower 3 is more
+              than simply a structure; it's a way of life designed for residents
+              who value quality and comfort.B&B Tower 3 welcomes you to make
+              your dream lifestyle a reality with ease by offering a fascinating
+              three-year installment plan. Consider a location where luxury
+              meets convenience—this innovative building has a broad range of
+              facilities, from a modern restaurant service to modern
+              fire-fighting tools, ensuring safety is essential. The 24-hour
+              CCTV cameras, satisfactory parking, an attractive mosque,
+              efficient elevators, and a well-stocked grocery shop add higher
+              levels of functionality and ease to your daily life. Furthermore,
+              electricity power backup ensures continuous existence. B&B Tower 3
+              is more than just a building; it is a promise of a lively,
+              elevated lifestyle in which every aspect has been thoughtfully
+              created to provide you with a memorable stay. Secure an apartment
+              in the future of urban living—where luxury lives outstanding
             </p>
 
             {/* Apartment Cards Section */}
@@ -67,17 +80,19 @@ const OurProjects = () => {
               </Slider>
             </div>
             <p className="mt-3 text-xl md:text-2xl text-justify">
-              B&B-Tower-2 embodies the seamless convergence of luxury, comfort,
-              and premier amenities, presenting an unparalleled living
-              experience. This collaborative venture between Emirates Builders
-              and B&B Builders reflects a rare opportunity, showcasing a
-              distinctive blend of commercial and residential facilities.
-              Spanning a total covered area of one kanal, the proposed
-              infrastructure of ground plus 5 levels sets the stage for a unique
-              lifestyle. With a three-year easy installment plan, B&B Tower 2
-              invites those with a penchant for premium living to indulge in the
-              epitome of luxury, strategically located in the picturesque Faisal
-              Town, Islamabad.
+              B&B Tower 2, a distinctive blend of commercial and residential
+              excellence set in the heart of Islamabad's dynamic Civic Center
+              Block-C, Faisal Town, invites you to embark on a new urban
+              experience. This modern masterpiece covers a one-kanal area,
+              perfectly blending modern living and commercial spaces. B&B Tower
+              2 delivers a lifestyle of outstanding convenience with an
+              exclusive opportunity and a flexible three-year installment plan.
+              Enjoy a variety of amenities, such as a broad broad range
+              restaurants, modern fire-fighting tools, 24-hour CCTV security,
+              satisfactory vehicle parking, an attractive mosque, explosive
+              elevators, a well-stocked grocery store, and constant electricity
+              power backup. At B&B Tower 2, where innovation meets luxury, you
+              can raise your standards and embrace the future of unified living.
             </p>
             {/* Apartment Cards Section */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
@@ -95,7 +110,7 @@ const OurProjects = () => {
         <div>
           <SectionWithTitle title="B & B Tower-1">
             <p className="mt-3 text-xl md:text-2xl text-justify">
-              B&B-Tower-1 is a master piece Commercial development comprises of
+              B&B tower 1is a master piece Commercial development comprises of
               Retails/Shops and Residential Apartments Developed by B&B Builders
               on Prime location of fast Developing community of C-Block Main
               Civic Center of Faisal Town having Geo Strategic location
@@ -104,6 +119,8 @@ const OurProjects = () => {
               other Popular City Areas and also from Taxila, Wah, Hazara
               Division, lower & Upper Kpk, Punjab. The project was started in
               February 2O2I by B&B Builders with the passion to deliver on time.
+              B&B tower 1 will be handed over to the clients before
+              February 2024.
               <strong>
                 {' '}
                 B&B-Tower-1 will be handed over to the clients before February
@@ -127,35 +144,20 @@ const OurProjects = () => {
         <div>
           <SectionWithTitle title="B & B Villas">
             <p className="mt-3 text-xl md:text-2xl text-justify">
-              &quot;Indulge in the pinnacle of contemporary living with B&B
-              Builders&apos; modern and luxury villas that redefine opulence.
-              Our residences seamlessly blend modern architecture with lavish
-              comforts, offering a lifestyle of unmatched sophistication. Each
-              villa is a testament to our commitment to excellence, featuring
-              meticulously designed bedrooms, luxurious bathrooms, a spacious TV
-              lounge, and a state-of-the-art kitchen. Embracing sustainable
-              living, our villas come equipped with an installed solar system,
-              ensuring energy efficiency and a reduced carbon footprint.
-              Experience the utmost convenience with our flexible one-year
-              installment plans, making your dream home a reality with ease.
-              Security is paramount, and our villas are outfitted with CCTV
-              cameras, providing residents with peace of mind and a secure haven
-              to call home.&quot; <br />
-              &quot;Step into the future of luxury living at B&B Builders, where
-              every detail reflects a commitment to unparalleled elegance and
-              convenience. Our modern villas redefine the standards of
-              contemporary living, boasting sleek architectural designs and
-              cutting-edge features. Enjoy the comfort of well-appointed
-              bedrooms, spa-like bathrooms, and a stylish TV lounge that becomes
-              the heart of your home. The fully-equipped kitchen caters to the
-              demands of modern living, ensuring a seamless blend of
-              functionality and aesthetics. What sets us apart is our commitment
-              to sustainability, our villas feature an installed solar system,
-              promoting eco-friendly living. With the added convenience of
-              one-year installments, we make luxury living accessible. Safety is
-              paramount, and our villas are equipped with CCTV cameras,
-              providing residents with a secure and technologically advanced
-              haven to cherish.&quot;
+              &quot;Elevate your lifestyle with B&B Builders' modern and luxury
+              villas, that establish variety through the flawless combination of
+              modern architecture and lavish luxuries.&apos; Each house features
+              stunning decor in bedrooms, luxury bathrooms, a large TV area, and
+              a modern kitchen. Our villas, which value long-term
+              sustainability, have installed solar systems for energy
+              efficiency. Experience a level of comfort with flexible one-year
+              installment options that conveniently transform your dream house
+              into a reality. In this smart and secure refuge, security is
+              key,&quot; <br />
+              &quot;with CCTV cameras providing peace of mind. B&B Builders
+              welcomes you to the future of luxury living, where every detail
+              represents a commitment to remarkable professionalism and
+              affordability.&quot;
             </p>
 
             {/* Apartment Cards Section */}
