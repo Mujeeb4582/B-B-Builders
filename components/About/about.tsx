@@ -11,7 +11,7 @@ const About = () => {
             B & B BUILDERS
           </h1>
           <p className="text-base sm:text-lg sm:pr-4 py-6 text-white text-justify">
-          B&B Builders entered the real estate market in 2018 in the developing 
+          B&B Builders entered the real estate market in 2019 in the developing 
           capital city of Islamabad, Pakistan, with the goal of re creating urban 
           living and commercial spaces. B&B Builders, which specializes in commercial plots, 
           shops, and offices, became well-known for its dedication to modern architecture and 
