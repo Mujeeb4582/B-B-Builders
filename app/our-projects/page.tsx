@@ -3,6 +3,14 @@
 import Image from 'next/image';
 import ApartmentCard from '@/components/Card';
 import SectionWithTitle from '@/components/SectionWithTitle';
+import pic1 from '../../public/image/pic1.jpg';
+import pic2 from '../../public/image/pic2.jpg';
+import pic3 from '../../public/image/pic3.jpg';
+import pic4 from '../../public/image/pic4.jpg';
+import Tower2 from '../../public/image/tower-2/Tower-2-1.jpg'
+import Tower11 from '../../public/image/tower-2/Tower-2-11.jpg'
+import Tower12 from '../../public/image/tower-2/Tower-2-2.jpg'
+import Tower13 from '../../public/image/tower-2/Tower-2-3.jpg'
 import {
   tower3Data,
   tower2Pics,
@@ -13,6 +21,7 @@ import {
 import Slider from 'react-slick';
 
 const OurProjects = () => {
+  const images = [pic1, pic2, pic3, pic4, Tower2, Tower11, Tower12, Tower13];
   const settings = {
     infinite: true,
     dots: true,
@@ -50,8 +59,18 @@ const OurProjects = () => {
               in the future of urban living—where luxury lives outstanding
             </p>
 
+            {/* Slider component */}
+            <div className="center-container">
+              <div className="slider">
+                {images.map((src, i) => (
+                  <span key={i} style={{ '--i': i + 1 } as any}>
+                    <Image src={src} alt={`img${i + 1}`} />
+                  </span>
+                ))}
+              </div>
+            </div>
             {/* Apartment Cards Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
               {tower3Data.map((apartment, index) => (
                 <ApartmentCard
                   key={index}
@@ -60,7 +79,7 @@ const OurProjects = () => {
                   description={apartment.description}
                 />
               ))}
-            </div>
+            </div> */}
           </SectionWithTitle>
         </div>
         <div>
