@@ -48,7 +48,7 @@ const ProjectsSlider = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="containerCard">
       {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}

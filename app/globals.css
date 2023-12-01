@@ -40,20 +40,20 @@
   }
 }
 
-.container {
+.containerCard {
   display: flex;
   justify-content: space-around; 
   flex-wrap: wrap;
 }
 
-.container .card .face{
+.containerCard .card .face{
   width:300px;
   height: 200px;
   transition:.4s;
   
 }
 
-.container .card .face.face1{
+.containerCard .card .face.face1{
   position: relative;
   background:#c86500;
   display: flex;
@@ -64,7 +64,7 @@
   transform: translateY(100px);
 }
 
-.container .card:hover .face.face1{
+.containerCard .card:hover .face.face1{
   transform: translateY(0);
   box-shadow:
     inset 0 0 60px whitesmoke,
@@ -79,26 +79,26 @@
 }
 
 
-.container .card .face.face1 .content{
+.containerCard .card .face.face1 .content{
   transition:  0.5s;
   text-align: center;
 
 
 }
 
-.container .card:hover .face.face1 .content{
+.containerCard .card:hover .face.face1 .content{
   opacity: 1;
  
 }
 
-.container .card .face.face1 .content i{
+.containerCard .card .face.face1 .content i{
   font-size: 4em;
   color: white;
   display: inline-block;
    
 }
 
-.container .card .face.face1 .content h3{
+.containerCard .card .face.face1 .content h3{
   font-size: 2em;
   color: white;
   text-align: center;
@@ -107,11 +107,11 @@
 
 }
 
-.container .card .face.face1 .content a{
+.containerCard .card .face.face1 .content a{
    transition: .5s;
 }
 
-.container .card .face.face2{
+.containerCard .card .face.face2{
    position: relative;
    background: whitesmoke;
    display: flex;
@@ -123,20 +123,20 @@
   transform: translateY(-100px);
 }
 
-.container .card:hover .face.face2{
+.containerCard .card:hover .face.face2{
     transform: translateY(0);
 
 
 }
 
-.container .card .face.face2 .content p, a{
+.containerCard .card .face.face2 .content p, a{
   font-size: 10pt;
   margin: 0 ;
   padding: 0;
   color:#c96b0e;
 }
 
-.container .card .face.face2 .content a{
+.containerCard .card .face.face2 .content a{
   text-decoration:none;
   color: #e7923d;
   box-sizing: border-box;
@@ -146,7 +146,7 @@
   display: inline-block;
 }
 
-.container .card .face.face2 .content a:hover{
+.containerCard .card .face.face2 .content a:hover{
   background: rgba(255, 230, 0, 0.795);
   color: whitesmoke; 
   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
