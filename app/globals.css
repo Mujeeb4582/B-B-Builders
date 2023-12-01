@@ -40,17 +40,10 @@
   }
 }
 
-.container{
-  width: 1000px;
-  position: relative;
+.container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap:wrap;
-  
-}
-
-.container .card{
-  position: relative;
+  justify-content: space-around; 
+  flex-wrap: wrap;
 }
 
 .container .card .face{
@@ -75,12 +68,12 @@
   transform: translateY(0);
   box-shadow:
     inset 0 0 60px whitesmoke,
-    inset 20px 0 80px #f0f,
+    inset 20px 0 80px rgba(255, 230, 0, 0.795),
     inset -20px 0 80px #0ff,
-    inset 20px 0 300px #f0f,
-    inset -20px 0 300px #0ff,
+    inset 20px 0 300px #e7923d,
+    inset -20px 0 300px rgb(238, 255, 0),
     0 0 50px #fff,
-    -10px 0 80px #f0f,
+    -10px 0 80px #e7923d,
     10px 0 80px #0ff;
    
 }
@@ -90,11 +83,6 @@
   opacity: .2;
   transition:  0.5s;
   text-align: center;
-  
-   
-  
-  
- 
 
 }
 
@@ -130,7 +118,7 @@
    justify-content: center;
    padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0,0,0,.8);
+  box-shadow: 0 20px 50px #e7923d;
   transform: translateY(-100px);
 }
 
@@ -144,21 +132,21 @@
   font-size: 10pt;
   margin: 0 ;
   padding: 0;
-  color:#333;
+  color:#c96b0e;
 }
 
 .container .card .face.face2 .content a{
   text-decoration:none;
-  color: black;
+  color: #e7923d;
   box-sizing: border-box;
-  outline : 1px dashed #333;
+  outline : 1px dashed #e7923d;
   padding: 10px;
   margin: 15px 0 0;
   display: inline-block;
 }
 
 .container .card .face.face2 .content a:hover{
-  background: #333 ;
+  background: rgba(255, 230, 0, 0.795);
   color: whitesmoke; 
   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
