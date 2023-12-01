@@ -21,7 +21,7 @@ import {
 import Slider from 'react-slick';
 
 const OurProjects = () => {
-  const images = [pic1, pic2, pic3, pic4, Tower2, Tower11, Tower12, Tower13];
+  const images = [pic1, pic2, pic3, pic4, Tower2, Tower11, Tower12, Tower13 ];
   const settings = {
     infinite: true,
     dots: true,

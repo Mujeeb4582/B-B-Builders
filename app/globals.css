@@ -148,8 +148,8 @@
 }
 
 .containerCard .card .face.face2 .content a:hover{
-  background: rgba(255, 230, 0, 0.795);
-  color: whitesmoke; 
+  background: #ffe600cb;
+  color: #c86500; 
   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
 
@@ -159,7 +159,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 50vh;
   margin: 0;
 }
 .slider {
