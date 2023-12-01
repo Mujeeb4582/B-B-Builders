@@ -1,11 +1,14 @@
-'use client'
 import React from 'react';
 
-const ProjectCard = ({ iconClass, title, description }) => (
+interface ProjectCardProps {
+  title: string;
+  description: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description }) => (
   <div className="card">
     <div className="face face1">
       <div className="content">
-        <i className={iconClass}></i>
         <h3>{title}</h3>
       </div>
     </div>
@@ -23,22 +26,24 @@ const ProjectCard = ({ iconClass, title, description }) => (
 const ProjectsSlider = () => {
   const projects = [
     {
-      iconClass: 'fab fa-windows',
-      title: 'Windows',
+      title: 'B & B Tower-1',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?',
+        'B&B tower 1is a master piece Commercial development comprises of Retails/Shops and Residential Apartments Developed by B&B Builders',
     },
     {
-      iconClass: 'fab fa-android',
-      title: 'Android',
+      title: 'B & B Tower-2',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?',
+        ' B&B Tower 2, a distinctive blend of commercial and residential excellence set in the heart of Islamabads dynamic Civic Center Block-C, Faisal Town, invites you to embark on a new urban experience.',
     },
     {
-      iconClass: 'fab fa-apple',
-      title: 'Apple',
+      title: 'B & B Tower-3',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?',
+        ' Get ready to upgrade your living with B&B Builders future masterpiece that is Tower 3! This architectural masterpiece located in the heart of boulevard Faisal Hills, Islamabad.',
+    },
+    {
+      title: 'B & B Villas',
+      description:
+        'Elevate your lifestyle with B&B Builders modern and luxury villas, that establish variety through the flawless combination of modern architecture and lavish luxuries.',
     },
   ];
 
