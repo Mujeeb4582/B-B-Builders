@@ -25,11 +25,11 @@ const OurProjects = () => {
   const settings = {
     infinite: true,
     dots: true,
-    speed: 500,
+    speed: 3000,
     slidesToShow: 1, // Set to 1 to show one slide at a time
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 6000,
   };
   return (
     <main className="container pt-1 mt-24 p-8 lg:px-24 bg-logo">
@@ -64,7 +64,7 @@ const OurProjects = () => {
               <div className="slider">
                 {images.map((src, i) => (
                   <span key={i} style={{ '--i': i + 1 } as any}>
-                    <Image src={src} alt={`img${i + 1}`} />
+                    <Image src={src} alt={`img${i + 1}`} priority />
                   </span>
                 ))}
               </div>
@@ -82,7 +82,7 @@ const OurProjects = () => {
             </div> */}
           </SectionWithTitle>
         </div>
-        <div>
+        <div id="tower-two">
           <SectionWithTitle title="B & B Tower-2">
             <div className="w-full h-full mt-2">
               <Slider {...settings} className="rounded-lg overflow-hidden">
@@ -93,6 +93,7 @@ const OurProjects = () => {
                         src={image}
                         alt={`slide-${index + 1}`}
                         className="w-full h-full rounded-lg"
+                        priority
                       />
                     </div>
                   ))}

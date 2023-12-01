@@ -39,33 +39,50 @@
     opacity: 0.4;
   }
 }
+.sales-animations {
+  animation: blinks 6s linear infinite;
+}
+
+@keyframes blinks {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
 
 /* All Projects Section */
 .containerCard {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.containerCard .card .face{
-  width:300px;
+.containerCard .card .face {
+  width: 300px;
   height: 200px;
-  transition:.4s;
-  
+  transition: 0.4s;
 }
 
-.containerCard .card .face.face1{
+.containerCard .card .face.face1 {
   position: relative;
-  background:#c86500;
+  background: #c86500;
   display: flex;
   justify-content: center;
-  align-content:center;
+  align-content: center;
   align-items: center;
   z-index: 1;
   transform: translateY(100px);
 }
 
-.containerCard .card:hover .face.face1{
+.containerCard .card:hover .face.face1 {
   transform: translateY(0);
   box-shadow:
     inset 0 0 60px whitesmoke,
@@ -76,81 +93,71 @@
     0 0 50px #fff,
     -10px 0 80px #e7923d,
     10px 0 80px #0ff;
-   
 }
 
-
-.containerCard .card .face.face1 .content{
-  transition:  0.5s;
+.containerCard .card .face.face1 .content {
+  transition: 0.5s;
   text-align: center;
-
-
 }
 
-.containerCard .card:hover .face.face1 .content{
+.containerCard .card:hover .face.face1 .content {
   opacity: 1;
- 
 }
 
-.containerCard .card .face.face1 .content i{
+.containerCard .card .face.face1 .content i {
   font-size: 4em;
   color: white;
   display: inline-block;
-   
 }
 
-.containerCard .card .face.face1 .content h3{
+.containerCard .card .face.face1 .content h3 {
   font-size: 2em;
   color: white;
   text-align: center;
   font-weight: 700;
-  
-
 }
 
-.containerCard .card .face.face1 .content a{
-   transition: .5s;
+.containerCard .card .face.face1 .content a {
+  transition: 0.5s;
 }
 
-.containerCard .card .face.face2{
-   position: relative;
-   background: whitesmoke;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 20px;
+.containerCard .card .face.face2 {
+  position: relative;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   box-sizing: border-box;
   box-shadow: 0 20px 50px #e7923d;
   transform: translateY(-100px);
 }
 
-.containerCard .card:hover .face.face2{
-    transform: translateY(0);
-
-
+.containerCard .card:hover .face.face2 {
+  transform: translateY(0);
 }
 
-.containerCard .card .face.face2 .content p, a{
+.containerCard .card .face.face2 .content > p {
   font-size: 10pt;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
-  color:#c96b0e;
+  color: #c96b0e;
 }
 
-.containerCard .card .face.face2 .content a{
-  text-decoration:none;
+.containerCard .card .face.face2 .content a {
+  text-decoration: none;
   color: #e7923d;
   box-sizing: border-box;
-  outline : 1px dashed #e7923d;
+  outline: 1px dashed #e7923d;
   padding: 10px;
   margin: 15px 0 0;
   display: inline-block;
 }
 
-.containerCard .card .face.face2 .content a:hover{
+.containerCard .card .face.face2 .content a:hover {
   background: #ffe600cb;
-  color: #c86500; 
-  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  color: #c86500;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Our Project 3D slider */
@@ -172,11 +179,11 @@
 
 @keyframes rotate {
   0% {
-      transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(1000px) rotateY(0deg);
   }
 
   100% {
-      transform: perspective(1000px) rotateY(360deg);
+    transform: perspective(1000px) rotateY(360deg);
   }
 }
 
@@ -190,7 +197,6 @@
   transform-style: preserve-3d;
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
 }
-
 
 .slider span img {
   position: absolute;

@@ -10,11 +10,11 @@ const ReactSlider = () => {
   const settings = {
     infinite: true,
     dots: true,
-    speed: 500,
+    speed: 3000,
     slidesToShow: 1, // Set to 1 to show one slide at a time
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 6000,
   };
 
   return (

@@ -5,7 +5,7 @@ import Image from 'next/image';
 const AboutSlider = () => {
   return (
     <div className="relative w-full lg:h-160">
-      <div className="absolute rounded-lg bottom-[-10%] left-1/2 transform -translate-x-1/2 bg-white p-2 lg:p-10 shadow-xl dark:shadow-xl ring-white ring-offset-80">
+      <div className="absolute rounded-lg bottom-[-10%] left-1/2 transform -translate-x-1/2 bg-white p-2 lg:p-10 shadow-md shadow-yellow-500/50">
         <p className="my-5 text-[#c86500] text-3xl lg:text-6xl text-center font-bold">
           4+
         </p>{' '}
@@ -13,7 +13,7 @@ const AboutSlider = () => {
           Years of Experience{' '}
         </div>
       </div>
-      <Image src={pic4} className="w-full lg:h-full" alt="alt" />
+      <Image src={pic4} className="w-full lg:h-full" alt="alt" priority />
     </div>
   );
 };

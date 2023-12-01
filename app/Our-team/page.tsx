@@ -13,7 +13,7 @@ const OurTeam = () => {
           <h2 className="text-2xl md:text-4xl font-semibold mb-4 text-headingText">
             Meet Our CEO
           </h2>
-          <p className="md:text-xl text-justify text-headingText">
+          <p className="md:text-xl text-justify text-amber-900">
             Founded in 2019, B&B Builders, underneath my management as an
             electrical engineer, isn&apos;t always only a industrial creation
             company; it&apos;s a passion-pushed journey to redefine modern

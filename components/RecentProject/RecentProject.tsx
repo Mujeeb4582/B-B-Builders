@@ -1,8 +1,11 @@
 // import RecentSlider from '@/components/RecentProject/main_slider';
 import Image from 'next/image';
 import towerTwoPic1 from '../../public/image/tower-2/Tower-2-3.jpg';
+import { useRouter } from 'next/navigation';
 
 const RecentProject = () => {
+  const router = useRouter();
+  const handleClick = () => router.push('/our-projects#tower-two');
   return (
     <>
       <div className="flex flex-col lg:flex-row items-center px-12 bg-white">
@@ -11,7 +14,8 @@ const RecentProject = () => {
           <Image
             src={towerTwoPic1}
             alt="Picture of the tower-2"
-            className="h-full w-full"
+            className="h-full w-full shadow-2xl rounded-md"
+            priority
           />
         </div>
         <div className="text-center lg:text-left lg:p-12 lg:pl-24 sm:w-1/2 w-full bg-logo">
@@ -19,8 +23,11 @@ const RecentProject = () => {
             <h2 className="text-2xl lg:text-4xl font-bold text-[#c86500]">
               B & B Tower 2
             </h2>
+            <button className="bg-green-500 sales-animations text-white ml-10 px-10 py-2 text-lg rounded-md shadow-2xl font-semibold">
+              Hot sale
+            </button>
           </div>
-          <p className="text-base lg:text-lg mb-4 text-justify lg:mb-2 text-[#c86500]">
+          <p className="text-base lg:text-lg mb-4 text-justify lg:mb-2">
             B&B Tower 2, a distinctive blend of commercial and residential
             excellence set in the heart of Islamabad&apos;s dynamic Civic Center
             Block-C, Faisal Town, invites you to embark on a new urban
@@ -35,10 +42,13 @@ const RecentProject = () => {
             At B&B Tower 2, where innovation meets luxury, you can raise your
             standards and embrace the future of unified living.
           </p>
-          <button className="relative font-thin text-xl text-white">
-            <div className="inset-x-0 h-full bottom-0 rounded-lg relative bg-[#c86500] border border-white-500 rounded-lg px-20 transition transform duration-200 hover:translate-y-2">
+          <button className="relative text-xl text-white">
+            <button
+              onClick={handleClick}
+              className="inset-x-0 h-full relative bg-[#c86500] border-white-500 rounded-md px-5 py-2 shadow-md shadow-amber-950 hover:scale-90 duration-300"
+            >
               Learn More
-            </div>
+            </button>
           </button>
         </div>
       </div>
