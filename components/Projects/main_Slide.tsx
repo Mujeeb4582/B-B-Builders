@@ -33,7 +33,7 @@ const ProjectsSlider = () => {
     {
       title: 'B & B Tower-2',
       description:
-        ' B&B Tower 2, a distinctive blend of commercial and residential excellence set in the heart of Islamabads dynamic Civic Center Block-C, Faisal Town, invites you to embark on a new urban experience.',
+        ' B&B Tower 2, a distinctive blend of commercial and residential excellence set in the heart of Islamabad&apos;s dynamic Civic Center Block-C, Faisal Town, invites you to embark on a new urban experience.',
     },
     {
       title: 'B & B Tower-3',

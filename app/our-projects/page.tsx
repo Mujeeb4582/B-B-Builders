@@ -7,12 +7,12 @@ import pic1 from '../../public/image/pic1.jpg';
 import pic2 from '../../public/image/pic2.jpg';
 import pic3 from '../../public/image/pic3.jpg';
 import pic4 from '../../public/image/pic4.jpg';
-import Tower2 from '../../public/image/tower-2/Tower-2-1.jpg'
-import Tower11 from '../../public/image/tower-2/Tower-2-11.jpg'
-import Tower12 from '../../public/image/tower-2/Tower-2-2.jpg'
-import Tower13 from '../../public/image/tower-2/Tower-2-3.jpg'
+import Tower2 from '../../public/image/tower-2/Tower-2-1.jpg';
+import Tower11 from '../../public/image/tower-2/Tower-2-11.jpg';
+import Tower12 from '../../public/image/tower-2/Tower-2-2.jpg';
+import Tower13 from '../../public/image/tower-2/Tower-2-3.jpg';
 import {
-  tower3Data,
+  // tower3Data,
   tower2Pics,
   tower2Data,
   tower1Data,
@@ -21,7 +21,7 @@ import {
 import Slider from 'react-slick';
 
 const OurProjects = () => {
-  const images = [pic1, pic2, pic3, pic4, Tower2, Tower11, Tower12, Tower13 ];
+  const images = [pic1, pic2, pic3, pic4, Tower2, Tower11, Tower12, Tower13];
   const settings = {
     infinite: true,
     dots: true,
@@ -37,17 +37,17 @@ const OurProjects = () => {
         <div>
           <SectionWithTitle title="B & B Tower-3">
             <p className="mt-3 text-xl md:text-2xl text-justify">
-              Get ready to upgrade your living with B&B Builders' future
+              Get ready to upgrade your living with B&B Builders&apos; future
               masterpiece that is Tower 3! This architectural masterpiece,
               located in the heart of boulevard Faisal Hills, Islamabad,
               elegantly mixes the greatest of commercial and residential
               facilities over a broad 1 kanal covered space. Tower 3 is more
-              than simply a structure; it's a way of life designed for residents
-              who value quality and comfort.B&B Tower 3 welcomes you to make
-              your dream lifestyle a reality with ease by offering a fascinating
-              three-year installment plan. Consider a location where luxury
-              meets convenience—this innovative building has a broad range of
-              facilities, from a modern restaurant service to modern
+              than simply a structure; it&apos;s a way of life designed for
+              residents who value quality and comfort.B&B Tower 3 welcomes you
+              to make your dream lifestyle a reality with ease by offering a
+              fascinating three-year installment plan. Consider a location where
+              luxury meets convenience—this innovative building has a broad
+              range of facilities, from a modern restaurant service to modern
               fire-fighting tools, ensuring safety is essential. The 24-hour
               CCTV cameras, satisfactory parking, an attractive mosque,
               efficient elevators, and a well-stocked grocery shop add higher
@@ -100,8 +100,8 @@ const OurProjects = () => {
             </div>
             <p className="mt-3 text-xl md:text-2xl text-justify">
               B&B Tower 2, a distinctive blend of commercial and residential
-              excellence set in the heart of Islamabad's dynamic Civic Center
-              Block-C, Faisal Town, invites you to embark on a new urban
+              excellence set in the heart of Islamabad&apos;s dynamic Civic
+              Center Block-C, Faisal Town, invites you to embark on a new urban
               experience. This modern masterpiece covers a one-kanal area,
               perfectly blending modern living and commercial spaces. B&B Tower
               2 delivers a lifestyle of outstanding convenience with an
@@ -129,7 +129,7 @@ const OurProjects = () => {
         <div>
           <SectionWithTitle title="B & B Tower-1">
             <p className="mt-3 text-xl md:text-2xl text-justify">
-              B&B tower 1is a master piece Commercial development comprises of
+              B&B-Tower-1 is a master piece Commercial development comprises of
               Retails/Shops and Residential Apartments Developed by B&B Builders
               on Prime location of fast Developing community of C-Block Main
               Civic Center of Faisal Town having Geo Strategic location
@@ -138,8 +138,6 @@ const OurProjects = () => {
               other Popular City Areas and also from Taxila, Wah, Hazara
               Division, lower & Upper Kpk, Punjab. The project was started in
               February 2O2I by B&B Builders with the passion to deliver on time.
-              B&B tower 1 will be handed over to the clients before
-              February 2024.
               <strong>
                 {' '}
                 B&B-Tower-1 will be handed over to the clients before February
@@ -163,12 +161,12 @@ const OurProjects = () => {
         <div>
           <SectionWithTitle title="B & B Villas">
             <p className="mt-3 text-xl md:text-2xl text-justify">
-              &quot;Elevate your lifestyle with B&B Builders' modern and luxury
-              villas, that establish variety through the flawless combination of
-              modern architecture and lavish luxuries.&apos; Each house features
-              stunning decor in bedrooms, luxury bathrooms, a large TV area, and
-              a modern kitchen. Our villas, which value long-term
-              sustainability, have installed solar systems for energy
+              &quot;Elevate your lifestyle with B&B Builders&apos; modern and
+              luxury villas, that establish variety through the flawless
+              combination of modern architecture and lavish luxuries.&apos; Each
+              house features stunning decor in bedrooms, luxury bathrooms, a
+              large TV area, and a modern kitchen. Our villas, which value
+              long-term sustainability, have installed solar systems for energy
               efficiency. Experience a level of comfort with flexible one-year
               installment options that conveniently transform your dream house
               into a reality. In this smart and secure refuge, security is
