@@ -17,14 +17,16 @@ const TowerSlider: React.FC = () => {
         id="s1"
         defaultChecked
       />
-      <input type="radio" name="slider" className="d-none" id="s2" />
-      <input type="radio" name="slider" className="d-none" id="s3" />
-      <input type="radio" name="slider" className="d-none" id="s4" />
-      <input type="radio" name="slider" className="d-none" id="s5" />
+      <input type="radio" name="slider" className="hidden" id="s1" defaultChecked />
+      <input type="radio" name="slider" className="hidden" id="s2" />
+      <input type="radio" name="slider" className="hidden" id="s3" />
+      <input type="radio" name="slider" className="hidden" id="s4" />
+      <input type="radio" name="slider" className="hidden" id="s5" />
 
-      <div className="cards">
+      <div className="cards flex">
         {/* Slide 1 */}
-        <label htmlFor="s1" id="slide1">
+        <label htmlFor="s1" id="slide1" className="w-full sm:w-1/2 lg:w-1/5">
+
           <div className="card">
             <div className="image">
               <Image src={pic} alt="pic" />
@@ -43,7 +45,7 @@ const TowerSlider: React.FC = () => {
         </label>
 
         {/* Slide 2 */}
-        <label htmlFor="s2" id="slide2">
+        <label htmlFor="s2" id="slide2" className="w-full sm:w-1/2 lg:w-1/5">
           <div className="card">
             <div className="image">
               <Image src={pic1} alt="pic1" />
@@ -62,7 +64,7 @@ const TowerSlider: React.FC = () => {
         </label>
 
         {/* Slide 3 */}
-        <label htmlFor="s3" id="slide3">
+        <label htmlFor="s3" id="slide3" className="w-full sm:w-1/2 lg:w-1/5">
           <div className="card">
             <div className="image">
               <Image src={pic2} alt="pic2" />
@@ -81,7 +83,7 @@ const TowerSlider: React.FC = () => {
         </label>
 
         {/* Slide 4 */}
-        <label htmlFor="s4" id="slide4">
+        <label htmlFor="s4" id="slide4" className="w-full sm:w-1/2 lg:w-1/5">
           <div className="card">
             <div className="image">
               <Image src={pic3} alt="pic3" />
@@ -99,7 +101,7 @@ const TowerSlider: React.FC = () => {
         </label>
 
         {/* Slide 5 */}
-        <label htmlFor="s5" id="slide5">
+        <label htmlFor="s5" id="slide5" className="w-full sm:w-1/2 lg:w-1/5">
           <div className="card">
             <div className="image">
               <Image src={pic4} alt="pic4" />
