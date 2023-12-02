@@ -1,10 +1,22 @@
 import React from 'react';
+import Image, { StaticImageData } from 'next/image';
+import pic from '../../public/image/pic.jpg';
+import pic1 from '../../public/image/pic1.jpg';
+import pic2 from '../../public/image/pic2.jpg';
+import pic3 from '../../public/image/pic3.jpg';
+import pic4 from '../../public/image/pic4.jpg';
 
 const TowerSlider: React.FC = () => {
+  const images = [pic, pic1, pic2, pic3, pic4];
   return (
     <div className="containerTower1">
-
-      <input type="radio" name="slider" className="d-none" id="s1" checked />
+      <input
+        type="radio"
+        name="slider"
+        className="d-none"
+        id="s1"
+        defaultChecked
+      />
       <input type="radio" name="slider" className="d-none" id="s2" />
       <input type="radio" name="slider" className="d-none" id="s3" />
       <input type="radio" name="slider" className="d-none" id="s4" />
@@ -15,24 +27,18 @@ const TowerSlider: React.FC = () => {
         <label htmlFor="s1" id="slide1">
           <div className="card">
             <div className="image">
-              <img src="img/Nike SuperRep Go.jpg" alt="" />
-              <div className="dots">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
+              <Image src={pic} alt="pic" />
             </div>
             <div className="infos">
-              <span className="name">Nike SuperRep Go</span>
+              <span className="name">Studio Apartment</span>
               <span className="lorem">
-                Lorem ipsum dolor sit amet, sit amet adipiscing elit. Aenean vel ansd . Nullam
-                lorem. Nulla eu sodales
+                Cozy apartment with one bedroom, perfect for individuals or
+                couples.
               </span>
             </div>
-            <a href="/contact" className="btn-contact">
+            <a href="#" className="btn-details">
               details
             </a>
-          
           </div>
         </label>
 
@@ -40,24 +46,18 @@ const TowerSlider: React.FC = () => {
         <label htmlFor="s2" id="slide2">
           <div className="card">
             <div className="image">
-              <img src="img/Free run flyknit.jpg" alt="" />
-              <div className="dots">
-                <div className="dot1"></div>
-                <div className="dot2"></div>
-                <div className="dot3"></div>
-              </div>
+              <Image src={pic1} alt="pic1" />
             </div>
             <div className="infos">
-              <span className="name">Free Run Flyknit</span>
+              <span className="name">1-Bed Apartment</span>
               <span className="lorem">
-                Lorem ipsum dolor sit, adipiscing elit. Aenean vel sit ansd . Nullam
-                lorem. Nulla eu sodales karma stellus
+                Spacious apartment with two bedrooms, ideal for small families
+                or roommates.
               </span>
             </div>
-            <a href="/contact" className="btn-contact">
+            <a href="#" className="btn-details">
               details
             </a>
-           
           </div>
         </label>
 
@@ -65,24 +65,18 @@ const TowerSlider: React.FC = () => {
         <label htmlFor="s3" id="slide3">
           <div className="card">
             <div className="image">
-              <img src="img/Black Toe Union.jpg" alt="" />
-              <div className="dots">
-                <div className="dot1"></div>
-                <div className="dot2"></div>
-                <div className="dot3"></div>
-              </div>
+              <Image src={pic2} alt="pic2" />
             </div>
             <div className="infos">
-              <span className="name">Black Toe Union</span>
+              <span className="name">2-Bed Apartment</span>
               <span className="lorem">
-                Lorem ipsum dolor, sit amet let kar adipiscing. Aenean vel velit sit ansd . Nullam
-                lorem. Nulla karma stellus
+                Large apartment with three bedrooms, suitable for families or
+                groups.
               </span>
             </div>
-            <a href="/contact" className="btn-contact">
+            <a href="#" className="btn-details">
               details
             </a>
-          
           </div>
         </label>
 
@@ -90,24 +84,17 @@ const TowerSlider: React.FC = () => {
         <label htmlFor="s4" id="slide4">
           <div className="card">
             <div className="image">
-              <img src="img/Retro High Og.jpg" alt="" />
-              <div className="dots">
-                <div className="dot1"></div>
-                <div className="dot2"></div>
-                <div className="dot3"></div>
-              </div>
+              <Image src={pic3} alt="pic3" />
             </div>
             <div className="infos">
-              <span className="name">Retro High Og</span>
+              <span className="name">Shops & Offices</span>
               <span className="lorem">
-                Lorem ipsum dolor sit, sit amet elit. Aenean sit amet sit amet vel velit sit ansd. Nulla eu
-                sodales stellus
+                Furnished shop for all business and all kind of office.
               </span>
             </div>
-            <a href="/contact" className="btn-contact">
+            <a href="#" className="btn-details">
               details
             </a>
-       
           </div>
         </label>
 
@@ -115,28 +102,20 @@ const TowerSlider: React.FC = () => {
         <label htmlFor="s5" id="slide5">
           <div className="card">
             <div className="image">
-              <img src="img/Off-White x Air Jordan.jpg" alt="" />
-              <div className="dots">
-                <div className="dot1"></div>
-                <div className="dot2"></div>
-                <div className="dot3"></div>
-              </div>
+              <Image src={pic4} alt="pic4" />
             </div>
             <div className="infos">
-              <span className="name">Off-White Air Jordan</span>
+              <span className="name">Amenities</span>
               <span className="lorem">
-                Lorem ipsum sit amet, sit amet elit. Aenean vel velit ansd . Nullam
-                lorem. Nulla eu sodales stellus
+                All kind of amenities are available in the building.
               </span>
             </div>
-            <a href="/contact" className="btn-contact">
+            <a href="#" className="btn-details">
               details
             </a>
-           
           </div>
         </label>
       </div>
-
     </div>
   );
 };
