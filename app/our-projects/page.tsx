@@ -7,10 +7,11 @@ import pic1 from '../../public/image/pic1.jpg';
 import pic2 from '../../public/image/pic2.jpg';
 import pic3 from '../../public/image/pic3.jpg';
 import pic4 from '../../public/image/pic4.jpg';
-import Tower2 from '../../public/image/tower-2/Tower-2-1.jpg'
-import Tower11 from '../../public/image/tower-2/Tower-2-11.jpg'
-import Tower12 from '../../public/image/tower-2/Tower-2-2.jpg'
-import Tower13 from '../../public/image/tower-2/Tower-2-3.jpg'
+import Tower2 from '../../public/image/tower-2/Tower-2-1.jpg';
+import Tower11 from '../../public/image/tower-2/Tower-2-11.jpg';
+import Tower12 from '../../public/image/tower-2/Tower-2-2.jpg';
+import Tower13 from '../../public/image/tower-2/Tower-2-3.jpg';
+import TowerSlider from '../../components/Tower1-slider/page';
 import {
   tower3Data,
   tower2Pics,
@@ -21,7 +22,7 @@ import {
 import Slider from 'react-slick';
 
 const OurProjects = () => {
-  const images = [pic1, pic2, pic3, pic4, Tower2, Tower11, Tower12, Tower13 ];
+  const images = [pic1, pic2, pic3, pic4, Tower2, Tower11, Tower12, Tower13];
   const settings = {
     infinite: true,
     dots: true,
@@ -148,7 +149,7 @@ const OurProjects = () => {
             </p>
 
             {/* Apartment Cards Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
               {tower1Data.map((apartment, index) => (
                 <ApartmentCard
                   key={index}
@@ -157,12 +158,13 @@ const OurProjects = () => {
                   description={apartment.description}
                 />
               ))}
-            </div>
+            </div> */}
+            <TowerSlider />
           </SectionWithTitle>
         </div>
         <div>
           <SectionWithTitle title="B & B Villas">
-            <p className="mt-3 text-xl md:text-2xl text-justify">
+            <p className="mt-20  text-xl md:text-2xl text-justify">
               &quot;Elevate your lifestyle with B&B Builders' modern and luxury
               villas, that establish variety through the flawless combination of
               modern architecture and lavish luxuries.&apos; Each house features
