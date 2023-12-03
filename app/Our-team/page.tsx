@@ -5,36 +5,26 @@ import { staffData } from '../../utils/staff';
 
 const OurTeam = () => {
   return (
-    <div className="container mx-auto p-12 mt-24">
+    <div className="container mx-auto p-12 mt-16 bg-logo">
       {/* CEO Section */}
-      <div className="flex flex-col-reverse md:flex-row items-center mb-12 justify-items-center lg:h-128">
-        {/* CEO Message */}
-        <div className="flex flex-col md:w-1/2 md:pr-8 bg-logo md:min-h-full bg-opacity-50 bg-gray content-center justify-center">
-          <h2 className="text-2xl md:text-4xl font-semibold mb-4 text-headingText">
-            Meet Our CEO
-          </h2>
-          <p className="md:text-xl text-justify text-amber-900">
-            Founded in 2019, B&B Builders, underneath my management as an
-            electrical engineer, isn&apos;t always only a industrial creation
-            company; it&apos;s a passion-pushed journey to redefine modern
-            structure.&apos;Our dedication to precision and innovation has been
-            the cornerstone of our success. As we keep to shape skylines, B&B
-            Builders stands as a testament to the relentless pursuit of
-            excellence, in which each project reflects our willpower to
-            developing areas that inspire and undergo. Thank you for being a
-            part of our transformative story.
-          </p>
-        </div>
-
-        {/* CEO Image */}
-        <div className="md:w-1/2 mb-4 md:mb-0 h-full">
+      <div className="grid grid-cols-1 justify-items-center mb-12">
+        <div className="bg-gray-200 p-4 rounded-md shadow-lg text-center">
           <Image
             src={CEO} // Replace with the path to your CEO's image
             alt="CEO Image"
-            width={700}
-            height={200}
-            className="rounded-md h-full"
+            width={600}
+            height={100}
+            className="rounded-md mb-4"
           />
+          {/* CEO Message */}
+          {/* <div className="flex flex-col md:w-1/2 md:pr-8 md:min-h-full bg-opacity-50 bg-gray content-center justify-center"> */}
+          <h3 className="text-lg md:text-3xl font-semibold mb-2">
+            Engr. Syed Abdullah Shah
+          </h3>
+          <p className="md:text-xl text-gray-600">Position: CEO</p>
+          <p className="md:text-xl text-gray-600 mb-2">
+            Degree: BS Electrical Engineering
+          </p>
         </div>
       </div>
 
@@ -54,6 +44,7 @@ const OurTeam = () => {
             />
             <h3 className="text-lg font-semibold mb-2">{staff.name}</h3>
             <p className="text-gray-600">Position: {staff.designation}</p>
+            <p className="text-gray-600">Degree: {staff.degree}</p>
           </div>
         ))}
       </div>

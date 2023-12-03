@@ -1,5 +1,3 @@
-import apartment from '../public/image/pic4.jpg';
-
 // Tower 2
 import Tower2_1 from '../public/image/tower-2/Tower-2-6.jpg';
 import Tower2_2 from '../public/image/tower-2/Tower-2-2.jpg';
@@ -18,6 +16,25 @@ import doubleBedT2 from '../public/image/tower-2/Tower-2-two-bed.jpg';
 import TopFloorCafeT2_1 from '../public/image/tower-2/Tower-2-cafe-1.jpg';
 import TopFloorCafeT2_2 from '../public/image/tower-2/Tower-2-cafe-2.jpg';
 import TopFloorCafeT2_3 from '../public/image/tower-2/Tower-2-cafe-3.jpg';
+
+// Tower 3
+import Tower3_1 from '../public/image/Tower-3/Tower-3-1.jpg';
+import Tower3_2 from '../public/image/Tower-3/Tower-3-2.jpg';
+// import Tower3_3 from '../public/image/Tower-3/Tower-3-Map.jpg';
+import Tower3_4 from '../public/image/Tower-3/Tower-3-one-bed-A.jpg';
+import Tower3_5 from '../public/image/Tower-3/Tower-3-studio.jpg';
+import Tower3_6 from '../public/image/Tower-3/Tower-3-two-bed-B.jpg';
+
+// Villas
+import Villa1 from '../public/image/Villas/villas1.jpg';
+import Villa2 from '../public/image/Villas/villas2.jpg';
+import VillaBathroom from '../public/image/villas/bathroom.jpeg';
+import VillaKitchen from '../public/image/villas/Kitchen.jpg';
+import VillaBedroom from '../public/image/villas/bedroom.jpg';
+
+// Offices
+import Office1 from '../public/image/Offices/office1.jpg';
+import Office2 from '../public/image/Offices/office2.jpg';
 
 // Amenities
 import Malls from '../public/image/Amenities/grocery.jpg';
@@ -40,50 +57,26 @@ export const tower2Pics = [
   Tower2_7,
 ];
 
-export const tower3Data = [
-  {
-    title: 'Studio Apartment',
-    bedCount: 'Studio Apartment',
-    imagePath: [apartment],
-    description:
-      'Cozy apartment with one bedroom, perfect for individuals or couples.',
-  },
-  {
-    title: '1-Bed Apartment',
-    bedCount: '1-Bed Apartment',
-    imagePath: [apartment],
-    description:
-      'Spacious apartment with two bedrooms, ideal for small families or roommates.',
-  },
-  {
-    title: '2-Bed Apartment',
-    bedCount: '2-Bed Apartment',
-    imagePath: [apartment],
-    description:
-      'Large apartment with three bedrooms, suitable for families or groups.',
-  },
-  {
-    title: 'Malls and Offices',
-    bedCount: 'Malls and Offices',
-    imagePath: [Malls],
-    description: 'Furnished shop for all business and all kind of office.',
-  },
-  {
-    title: 'Amenities',
-    bedCount: 'Amenities',
-    imagePath: [
-      Mosque,
-      Restaurant,
-      CCTV,
-      SwimmingPool,
-      Elevator,
-      CarParking,
-      FirFighting,
-      Electricity,
-    ],
-    description: 'All kind of amenities are available in the building.',
-  },
+export const tower3Pics = [
+  Tower3_1,
+  Tower3_2,
+  // Tower3_3,
+  Tower3_4,
+  Tower3_5,
+  Tower3_6,
 ];
+
+export const villasPics = [
+  Villa2,
+  Villa1,
+  VillaBedroom,
+  VillaKitchen,
+  VillaBathroom,
+];
+
+export const offices = [Office1, Office2];
+
+export const amenities = [Elevator];
 
 export const tower2Data = [
   {
@@ -91,21 +84,21 @@ export const tower2Data = [
     bedCount: 'Studio Apartment',
     imagePath: [studioPicT2],
     description:
-      'Cozy apartment with one bedroom, perfect for individuals or couples.',
+      'Charming studio apartment, ideal for individuals or couples, offers a cozy, all-in-one living space with a combined bedroom, living area, and kitchen.',
   },
   {
     title: '1-Bed Apartment',
     bedCount: '1-Bed Apartment',
     imagePath: [singleBedT2],
     description:
-      'Spacious apartment with two bedrooms, ideal for small families or roommates.',
+      'Comfortable one-bedroom apartment, ideal for individuals or couples, with a separate bedroom, cozy living area, and well-equipped kitchen.',
   },
   {
     title: '2-Bed Apartment',
     bedCount: '2-Bed Apartment',
     imagePath: [doubleBedT2],
     description:
-      'Large apartment with three bedrooms, suitable for families or groups.',
+      'Spacious two-bedroom apartment, perfect for families or roommates, offering a generous living area, two private bedrooms, and a well-appointed kitchen for a comfortable and shared living experience.',
   },
   {
     title: 'Top Floor Cafe',
@@ -117,7 +110,7 @@ export const tower2Data = [
   {
     title: 'Malls and Offices',
     bedCount: 'Malls and Offices',
-    imagePath: [Malls],
+    imagePath: [Office1, Office2, Malls],
     description: 'Furnished shop for all business and all kind of office.',
   },
   {
@@ -133,65 +126,6 @@ export const tower2Data = [
       FirFighting,
       Electricity,
     ],
-    description: 'All kind of amenities are available in the building.',
-  },
-];
-
-export const tower1Data = [
-  {
-    title: 'Studio Apartment',
-    bedCount: 'Studio Apartment',
-    imagePath: [apartment],
-    description:
-      'Cozy apartment with one bedroom, perfect for individuals or couples.',
-  },
-  {
-    title: '1-Bed Apartment',
-    bedCount: '1-Bed Apartment',
-    imagePath: [apartment],
-    description:
-      'Spacious apartment with two bedrooms, ideal for small families or roommates.',
-  },
-  {
-    title: '2-Bed Apartment',
-    bedCount: '2-Bed Apartment',
-    imagePath: [apartment],
-    description:
-      'Large apartment with three bedrooms, suitable for families or groups.',
-  },
-  {
-    title: 'Shops & Offices',
-    bedCount: 'Shops & Offices',
-    imagePath: [apartment],
-    description: 'Furnished shop for all business and all kind of office.',
-  },
-  {
-    title: 'Amenities',
-    bedCount: 'Amenities',
-    imagePath: [apartment],
-    description: 'All kind of amenities are available in the building.',
-  },
-];
-
-export const villasData = [
-  {
-    title: '2-Bed Villa',
-    bedCount: '2-Bed Villa',
-    imagePath: [apartment],
-    description:
-      'Spacious apartment with two bedrooms, ideal for small families or roommates.',
-  },
-  {
-    title: '3-Bed Villa',
-    bedCount: '3-Bed Villa',
-    imagePath: [apartment],
-    description:
-      'Large apartment with three bedrooms, suitable for families or groups.',
-  },
-  {
-    title: 'Amenities',
-    bedCount: 'Amenities',
-    imagePath: [apartment],
     description: 'All kind of amenities are available in the building.',
   },
 ];

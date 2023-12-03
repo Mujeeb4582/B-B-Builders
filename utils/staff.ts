@@ -1,16 +1,26 @@
 import StaffImage from '../public/image/ceo.jpg';
+import CEO from '../public/image/Abdullah.jpg';
+
+export const CEOImage = CEO;
 
 export const staffData = [
-  { name: 'Ahmed Ali', image: StaffImage, designation: 'Marketing Manager' },
   {
-    name: 'Jane Smith',
+    name: 'Engr. Muhammad Wassem',
     image: StaffImage,
-    designation: 'Sales Representative',
+    designation: 'Director Construction',
+    degree: 'BS Civil Engineering',
   },
   {
-    name: 'David Smith',
+    name: 'Engr. Syed Abdul Wahab',
     image: StaffImage,
-    designation: 'Accountant',
+    designation: 'GM Administration',
+    degree: 'BS Computer Science',
+  },
+  {
+    name: 'Abu Bakar',
+    image: StaffImage,
+    designation: 'GM Sales & Marketing',
+    degree: 'BS Project Management',
   },
   // Add more staff members as needed
 ];

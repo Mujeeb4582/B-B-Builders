@@ -1,13 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import pic from '../../public/image/pic.jpg';
-import pic1 from '../../public/image/pic1.jpg';
-import pic2 from '../../public/image/pic2.jpg';
-import pic3 from '../../public/image/pic3.jpg';
-import pic4 from '../../public/image/pic4.jpg';
+import { tower3Pics, offices, amenities } from '@/utils/cards';
 
 const TowerSlider: React.FC = () => {
-  // const images = [pic, pic1, pic2, pic3, pic4];
   return (
     <div className="containerTower1">
       <input
@@ -31,67 +26,70 @@ const TowerSlider: React.FC = () => {
 
       <div className="cards flex">
         {/* Slide 1 */}
-        <label htmlFor="s1" id="slide1" className="w-full sm:w-1/2 lg:w-1/5">
+        <label htmlFor="s1" id="slide1" className="rounded-xl">
           <div className="card">
             <div className="image">
-              <Image src={pic} alt="pic" />
+              <Image src={tower3Pics[3]} alt="pic" />
             </div>
             <div className="infos">
               <span className="name">Studio Apartment</span>
               <span className="lorem">
-                Cozy apartment with one bedroom, perfect for individuals or
-                couples.
+                Charming studio apartment, ideal for individuals or couples,
+                offers a cozy, all-in-one living space with a combined bedroom,
+                living area, and kitchen.
               </span>
             </div>
-            <a href="#" className="btn-details">
+            {/* <a href="#" className="btn-details">
               details
-            </a>
+            </a> */}
           </div>
         </label>
 
         {/* Slide 2 */}
-        <label htmlFor="s2" id="slide2" className="w-full sm:w-1/2 lg:w-1/5">
+        <label htmlFor="s2" id="slide2" className="rounded-xl">
           <div className="card">
             <div className="image">
-              <Image src={pic1} alt="pic1" />
+              <Image src={tower3Pics[2]} alt="pic1" />
             </div>
             <div className="infos">
               <span className="name">1-Bed Apartment</span>
               <span className="lorem">
-                Spacious apartment with two bedrooms, ideal for small families
-                or roommates.
+                Comfortable one-bedroom apartment, ideal for individuals or
+                couples, with a separate bedroom, cozy living area, and
+                well-equipped kitchen.
               </span>
             </div>
-            <a href="#" className="btn-details">
+            {/* <a href="#" className="btn-details">
               details
-            </a>
+            </a> */}
           </div>
         </label>
 
         {/* Slide 3 */}
-        <label htmlFor="s3" id="slide3" className="w-full sm:w-1/2 lg:w-1/5">
+        <label htmlFor="s3" id="slide3" className="rounded-xl">
           <div className="card">
             <div className="image">
-              <Image src={pic2} alt="pic2" />
+              <Image src={tower3Pics[4]} alt="pic2" />
             </div>
             <div className="infos">
               <span className="name">2-Bed Apartment</span>
               <span className="lorem">
-                Large apartment with three bedrooms, suitable for families or
-                groups.
+                Spacious two-bedroom apartment, perfect for families or
+                roommates, two private bedrooms, and a well-appointed kitchen
+                for a comfortable and shared living experience.
               </span>
             </div>
-            <a href="#" className="btn-details">
+            {/* <a href="#" className="btn-details">
               details
-            </a>
+            </a> */}
           </div>
         </label>
 
         {/* Slide 4 */}
-        <label htmlFor="s4" id="slide4" className="w-full sm:w-1/2 lg:w-1/5">
+        <label htmlFor="s4" id="slide4" className="rounded-xl">
           <div className="card">
             <div className="image">
-              <Image src={pic3} alt="pic3" />
+              <Image src={offices[0]} alt="pic3" />
             </div>
             <div className="infos">
               <span className="name">Shops & Offices</span>
@@ -99,17 +97,17 @@ const TowerSlider: React.FC = () => {
                 Furnished shop for all business and all kind of office.
               </span>
             </div>
-            <a href="#" className="btn-details">
+            {/* <a href="#" className="btn-details">
               details
-            </a>
+            </a> */}
           </div>
         </label>
 
         {/* Slide 5 */}
-        <label htmlFor="s5" id="slide5" className="w-full sm:w-1/2 lg:w-1/5">
+        <label htmlFor="s5" id="slide5" className="rounded-xl">
           <div className="card">
             <div className="image">
-              <Image src={pic4} alt="pic4" />
+              <Image src={amenities[0]} alt="pic4" />
             </div>
             <div className="infos">
               <span className="name">Amenities</span>
@@ -117,9 +115,9 @@ const TowerSlider: React.FC = () => {
                 All kind of amenities are available in the building.
               </span>
             </div>
-            <a href="#" className="btn-details">
+            {/* <a href="#" className="btn-details">
               details
-            </a>
+            </a> */}
           </div>
         </label>
       </div>

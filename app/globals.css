@@ -171,8 +171,8 @@
 }
 .slider {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 300px;
   transform-style: preserve-3d;
   animation: rotate 30s linear infinite;
 }
@@ -235,16 +235,17 @@ input {
 
 .cards {
   position: relative;
-  height: 500px;
-  width: 430px;
-  margin-bottom: 20px;
-  perspective: 1000px;
+  height: 525px;
+  width: 500px;
+  margin: 20px;
+  perspective: 900px;
   transform-style: preserve-3d;
 }
 
 .cards label {
   position: absolute;
-  width: 430px;
+  width: 500px;
+  height: 525px;
   left: 0;
   right: 0;
   margin: auto;
@@ -260,24 +261,12 @@ input {
   padding: 30px 35px;
 }
 
-.card .image {
-  display: flex;
-  justify-content: space-between;
-}
-
 .card .image img {
   border-radius: 5px;
   box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
   margin-top: 2px;
-  width: 86%;
-  height: 220px;
+  height: 270px;
   object-fit: cover;
-}
-
-.card .infos {
-  display: block;
-  text-align: end;
-  padding-top: 60px;
 }
 
 .infos span {
@@ -287,16 +276,17 @@ input {
 .infos .name {
   font-size: 30px;
   color: rgb(255, 255, 255);
-  letter-spacing: 8px;
-  margin-bottom: 20px;
-  padding-left: 25%;
+  letter-spacing: 2px;
+  padding: 30px 0 0 0;
   transition: all 0.6s ease;
+  text-align: center;
 }
 
 .infos .lorem {
   font-size: 15.5px;
   color: #eceaed;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .card .btn-details {
@@ -368,4 +358,42 @@ input {
   transform: translate3d(70%, 0, -220px);
   --current-color1: #eceaed;
   --current-color2: #404457;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    position: relative;
+    width: 250px;
+    height: 420px;
+    margin: 20px 0;
+    perspective: 500px;
+    transform-style: preserve-3d;
+  }
+
+  .cards label {
+    position: absolute;
+    width: 250px;
+    height: 420px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.55s ease;
+  }
+
+  .cards .card {
+    padding: 25px 30px;
+  }
+
+  .infos .name {
+    font-size: 18px;
+  }
+
+  .infos .lorem {
+    font-size: 12px;
+  }
+
+  .card .image img {
+    height: 180px;
+  }
 }

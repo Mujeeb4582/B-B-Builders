@@ -9,7 +9,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["placehold.co"],
+    domains: ['static.wixstatic.com'],
   },
 };
 

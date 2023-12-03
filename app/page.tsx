@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <div className="container mt-24 pt-1">
-        <div className="w-full ">
+        <div className="w-full">
           <ReactSlider />
         </div>
       </div>
@@ -19,9 +19,7 @@ const Home = () => {
       <RecentProject />
 
       <Projects />
-      <div className="p-24">
-        <CounterUp />
-      </div>
+      <CounterUp />
     </>
   );
 };
