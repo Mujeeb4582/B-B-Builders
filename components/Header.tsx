@@ -51,7 +51,7 @@ function Header() {
                 <Link href="/our-success">Our success</Link>
               </li>
               <li className={styles.navLinks}>
-                <Link href="/our-team">Our Team</Link>
+                <Link href="/who-we-are">Our Team</Link>
               </li>
               <li className={styles.navLinks}>
                 <Link href="/contact-us">Contact Us</Link>
@@ -113,7 +113,7 @@ function Header() {
                 onClick={() => setMenuOpen(false)}
                 className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
-                <Link href="/our-team">Our Team</Link>
+                <Link href="/who-we-are">Our Team</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
