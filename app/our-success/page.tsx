@@ -5,8 +5,20 @@ import Slider from 'react-slick';
 import SectionWithTitle from '@/components/SectionWithTitle';
 import TowerSlider from '@/components/Tower1-slider/tower1';
 import { villasPics } from '@/utils/cards';
+// import Villa2 from '../../public/image/Villas/villas2.jpg';
+// import Villa1 from '../../public/image/Villas/villas1.jpg';
+// import VillaBedroom from '../../public/image/Villas/bedroom.jpg';
+// import VillaKitchen from '../../public/image/Villas/Kitchen.jpg';
+// import VillaBathroom from '../../public/image/Villas/bathroom.jpeg';
 
 const OurSuccess = () => {
+  // const villasPics = [
+  //   Villa2,
+  //   Villa1,
+  //   VillaBedroom,
+  //   VillaKitchen,
+  //   VillaBathroom,
+  // ];
   const settings = {
     infinite: true,
     dots: true,
