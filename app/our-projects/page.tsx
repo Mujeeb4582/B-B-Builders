@@ -11,7 +11,8 @@ import Tower2 from '../../public/image/tower-2/Tower-2-1.jpg';
 import Tower11 from '../../public/image/tower-2/Tower-2-11.jpg';
 import Tower12 from '../../public/image/tower-2/Tower-2-2.jpg';
 import Tower13 from '../../public/image/tower-2/Tower-2-3.jpg';
-import TowerSlider from '../../components/Tower1-slider/page';
+import TowerSlider from '../../components/Tower1-slider/tower1';
+import VillaSlider from '@/components/Tower1-slider/villas';
 import {
   tower3Data,
   tower2Pics,
@@ -36,6 +37,16 @@ const OurProjects = () => {
     <main className="container pt-1 mt-24 p-8 lg:px-24 bg-logo">
       <div className="backdrop-blur-sm">
         <div>
+          {/* Slider component */}
+          <div className="center-container">
+            <div className="slider">
+              {images.map((src, i) => (
+                <span key={i} style={{ '--i': i + 1 } as any}>
+                  <Image src={src} alt={`img${i + 1}`} />
+                </span>
+              ))}
+            </div>
+          </div>
           <SectionWithTitle title="B & B Tower-3">
             <p className="mt-3 text-xl md:text-2xl text-justify">
               Get ready to upgrade your living with B&B Builders' future
@@ -60,16 +71,6 @@ const OurProjects = () => {
               in the future of urban living—where luxury lives outstanding
             </p>
 
-            {/* Slider component */}
-            <div className="center-container">
-              <div className="slider">
-                {images.map((src, i) => (
-                  <span key={i} style={{ '--i': i + 1 } as any}>
-                    <Image src={src} alt={`img${i + 1}`} />
-                  </span>
-                ))}
-              </div>
-            </div>
             {/* Apartment Cards Section */}
             {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
               {tower3Data.map((apartment, index) => (
@@ -180,9 +181,10 @@ const OurProjects = () => {
               represents a commitment to remarkable professionalism and
               affordability.&quot;
             </p>
+         
 
             {/* Apartment Cards Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
               {villasData.map((apartment, index) => (
                 <ApartmentCard
                   key={index}
@@ -191,7 +193,8 @@ const OurProjects = () => {
                   description={apartment.description}
                 />
               ))}
-            </div>
+            </div> */}
+               <VillaSlider />
           </SectionWithTitle>
         </div>
       </div>
