@@ -41,7 +41,11 @@ const OurProjects = () => {
             </div>
           </div>
           <div className="mt-20" id="tower-3">
-            <SectionWithTitle title="B & B Tower-3">
+            <SectionWithTitle
+              title="B & B Tower-3"
+              showLabel={true}
+              news="Pre-Launch"
+            >
               <div className="w-full h-full mt-2">
                 <Slider {...settings} className="rounded-lg overflow-hidden">
                   {Array.isArray(tower3Pics) &&
@@ -84,7 +88,11 @@ const OurProjects = () => {
           </div>
         </div>
         <div id="tower-2">
-          <SectionWithTitle title="B & B Tower-2">
+          <SectionWithTitle
+            title="B & B Tower-2"
+            showLabel={true}
+            news="Hot Deal"
+          >
             <div className="w-full h-full mt-2">
               <Slider {...settings} className="rounded-lg overflow-hidden">
                 {Array.isArray(tower2Pics) &&
