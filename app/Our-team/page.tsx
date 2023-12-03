@@ -1,4 +1,5 @@
 'use client';
+import React from 'react';
 import Image from 'next/image';
 import CEO from '../../public/image/Abdullah.jpg';
 import { staffData } from '../../utils/staff';

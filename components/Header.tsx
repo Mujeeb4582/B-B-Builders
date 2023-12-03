@@ -22,7 +22,7 @@ function Header() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
     <header>
-      <nav className="w-full h-24 shadow-xl bg-white px-4 fixed w-full z-10 top-0 ">
+      <nav className="w-full h-24 shadow-xl bg-white px-4 fixed z-10 top-0 ">
         {/* Desktop Menu */}
         <div className="flex items-center justify-between h-24 px-4">
           <Link href="/">
