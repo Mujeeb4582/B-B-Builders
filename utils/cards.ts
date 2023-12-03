@@ -28,9 +28,9 @@ import Tower3_6 from '../public/image/Tower-3/Tower-3-two-bed-B.jpg';
 // Villas
 import Villa1 from '../public/image/Villas/villas1.jpg';
 import Villa2 from '../public/image/Villas/villas2.jpg';
-import VillaBathroom from '../public/image/villas/bathroom.jpeg';
-import VillaKitchen from '../public/image/villas/Kitchen.jpg';
-import VillaBedroom from '../public/image/villas/bedroom.jpg';
+import VillaBathroom from '../public/image/Villas/bathroom.jpeg';
+import VillaKitchen from '../public/image/Villas/Kitchen.jpg';
+import VillaBedroom from '../public/image/Villas/bedroom.jpg';
 
 // Offices
 import Office1 from '../public/image/Offices/office1.jpg';
