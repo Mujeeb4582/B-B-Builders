@@ -10,8 +10,8 @@ import T2_1 from '../../public/image/tower-2/Tower-2-2.jpg';
 import T2_2 from '../../public/image/tower-2/Tower-2-3.jpg';
 import T3_1 from '../../public/image/Tower-3/Tower-3-1.jpg';
 import T3_2 from '../../public/image/Tower-3/Tower-3-2.jpg';
-import Villas_1 from '../../public/image/Villas/Villas-1.jpg';
-import Villas_2 from '../../public/image/Villas/Villas-2.jpg';
+import Villas_1 from '../../public/image/Villas/villas1.jpg';
+import Villas_2 from '../../public/image/Villas/Villas2.jpg';
 import TowerSlider from '../../components/Tower1-slider/tower1';
 import { tower2Pics, tower2Data, tower3Pics, villasPics } from '@/utils/cards';
 
