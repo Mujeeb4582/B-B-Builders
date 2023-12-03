@@ -1,10 +1,10 @@
 'use client';
 
-// import Image from 'next/image';
-// import Slider from 'react-slick';
+import Image from 'next/image';
+import Slider from 'react-slick';
 import SectionWithTitle from '@/components/SectionWithTitle';
 import TowerSlider from '@/components/Tower1-slider/tower1';
-// import { villasPics } from '@/utils/cards';
+import { villasPics } from '@/utils/cards';
 // import Villa2 from '../../public/image/Villas/villas2.jpg';
 // import Villa1 from '../../public/image/Villas/villas1.jpg';
 // import VillaBedroom from '../../public/image/Villas/bedroom.jpg';
@@ -19,15 +19,15 @@ const OurSuccess = () => {
   //   VillaKitchen,
   //   VillaBathroom,
   // ];
-  // const settings = {
-  //   infinite: true,
-  //   dots: true,
-  //   speed: 3000,
-  //   slidesToShow: 1, // Set to 1 to show one slide at a time
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 6000,
-  // };
+  const settings = {
+    infinite: true,
+    dots: true,
+    speed: 3000,
+    slidesToShow: 1, // Set to 1 to show one slide at a time
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+  };
   return (
     <main className="container pt-1 mt-24 p-8 lg:px-24 bg-logo">
       <div className="backdrop-blur-sm">
@@ -55,7 +55,7 @@ const OurSuccess = () => {
         <div id="villas">
           <SectionWithTitle title="B & B Villas">
             <div className="w-full h-full mt-2">
-              {/* <Slider {...settings} className="rounded-lg overflow-hidden">
+              <Slider {...settings} className="rounded-lg overflow-hidden">
                 {Array.isArray(villasPics) &&
                   villasPics.map((image, index) => (
                     <div key={index} className="w-full h-60 sm:h-144 ">
@@ -67,7 +67,7 @@ const OurSuccess = () => {
                       />
                     </div>
                   ))}
-              </Slider> */}
+              </Slider>
             </div>
             <p className="mt-3 text-xl md:text-2xl text-justify">
               &quot;Elevate your lifestyle with B&B Builders&apos; modern and
