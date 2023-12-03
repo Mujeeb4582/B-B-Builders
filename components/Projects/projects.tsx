@@ -1,14 +1,12 @@
 import React from 'react';
-import ProjectsSlider from './main_Slide';
+import ProjectsCardWrapper from './project-card';
 const Projects = () => {
   return (
     <>
-      <div className="py-5 font-bold text-4xl pl-9">
-        All <span className="text-[#c86500] font-bold text-4xl">Projects</span>
+      <div className="pt-12 font-bold text-4xl sm:text-6xl pl-9">
+        Our <span className="text-headingText font-bold">Projects</span>
       </div>
-      {/* <div className='w-full'> */}
-      <ProjectsSlider />
-      {/* </div> */}
+      <ProjectsCardWrapper />
     </>
   );
 };

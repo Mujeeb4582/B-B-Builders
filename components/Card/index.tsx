@@ -39,9 +39,9 @@ const ApartmentCard = ({
       </div>
       <h3 className="text-lg font-semibold mb-2">{bedCount}</h3>
       <p className="text-gray-600">{description}</p>
-      <button className="bg-yellow-600 text-white px-4 py-2 mt-4 rounded-md shadow-md">
+      {/* <button className="bg-yellow-600 text-white px-4 py-2 mt-4 rounded-md shadow-md">
         Learn More
-      </button>
+      </button> */}
     </div>
   );
 };

@@ -27,10 +27,12 @@ const Counter: React.FC<CounterProps> = ({ count, label, labelClassName }) => {
     <div
       className={`text-4xl font-bold text-white ${
         animated ? 'counter-up' : ''
-      } flex flex-col items-center`}
+      } flex flex-row-reverse justify-end sm:flex-col sm:items-center`}
     >
-      <span className="mb-5">{displayedCount}</span>
-      <span className={`text-sm  px-10 ${labelClassName || 'text-center'}`}>
+      <span className="sm:mb-5 w-full text-right sm:w-auto">
+        {displayedCount}
+      </span>
+      <span className={`text-2xl sm:text-3xl  sm:px-10 ${labelClassName}`}>
         {label}
       </span>
     </div>

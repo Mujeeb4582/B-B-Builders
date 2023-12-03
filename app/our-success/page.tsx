@@ -1,13 +1,37 @@
 'use client';
-import ApartmentCard from '@/components/Card';
+
+import Image from 'next/image';
+import Slider from 'react-slick';
 import SectionWithTitle from '@/components/SectionWithTitle';
-import { tower1Data, villasData } from '@/utils/cards';
+import TowerSlider from '@/components/Tower1-slider/tower1';
+import { villasPics } from '@/utils/cards';
+// import Villa2 from '../../public/image/Villas/villas2.jpg';
+// import Villa1 from '../../public/image/Villas/villas1.jpg';
+// import VillaBedroom from '../../public/image/Villas/bedroom.jpg';
+// import VillaKitchen from '../../public/image/Villas/Kitchen.jpg';
+// import VillaBathroom from '../../public/image/Villas/bathroom.jpeg';
 
 const OurSuccess = () => {
+  // const villasPics = [
+  //   Villa2,
+  //   Villa1,
+  //   VillaBedroom,
+  //   VillaKitchen,
+  //   VillaBathroom,
+  // ];
+  const settings = {
+    infinite: true,
+    dots: true,
+    speed: 3000,
+    slidesToShow: 1, // Set to 1 to show one slide at a time
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+  };
   return (
     <main className="container pt-1 mt-24 p-8 lg:px-24 bg-logo">
       <div className="backdrop-blur-sm">
-        <div>
+        <div id="tower-1">
           <SectionWithTitle title="B & B Tower-1">
             <p className="mt-3 text-xl md:text-2xl text-justify">
               B&B-Tower-1 is a master piece Commercial development comprises of
@@ -25,65 +49,41 @@ const OurSuccess = () => {
                 2024.
               </strong>
             </p>
-
-            {/* Apartment Cards Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-              {tower1Data.map((apartment, index) => (
-                <ApartmentCard
-                  key={index}
-                  bedCount={apartment.bedCount}
-                  imagePath={apartment.imagePath}
-                  description={apartment.description}
-                />
-              ))}
-            </div>
+            <TowerSlider />
           </SectionWithTitle>
         </div>
-        <div>
+        <div id="villas">
           <SectionWithTitle title="B & B Villas">
-            <p className="mt-3 text-xl md:text-2xl text-justify">
-              &quot;Indulge in the pinnacle of contemporary living with B&B
-              Builders&apos; modern and luxury villas that redefine opulence.
-              Our residences seamlessly blend modern architecture with lavish
-              comforts, offering a lifestyle of unmatched sophistication. Each
-              villa is a testament to our commitment to excellence, featuring
-              meticulously designed bedrooms, luxurious bathrooms, a spacious TV
-              lounge, and a state-of-the-art kitchen. Embracing sustainable
-              living, our villas come equipped with an installed solar system,
-              ensuring energy efficiency and a reduced carbon footprint.
-              Experience the utmost convenience with our flexible one-year
-              installment plans, making your dream home a reality with ease.
-              Security is paramount, and our villas are outfitted with CCTV
-              cameras, providing residents with peace of mind and a secure haven
-              to call home.&quot; <br />
-              &quot;Step into the future of luxury living at B&B Builders, where
-              every detail reflects a commitment to unparalleled elegance and
-              convenience. Our modern villas redefine the standards of
-              contemporary living, boasting sleek architectural designs and
-              cutting-edge features. Enjoy the comfort of well-appointed
-              bedrooms, spa-like bathrooms, and a stylish TV lounge that becomes
-              the heart of your home. The fully-equipped kitchen caters to the
-              demands of modern living, ensuring a seamless blend of
-              functionality and aesthetics. What sets us apart is our commitment
-              to sustainability, our villas feature an installed solar system,
-              promoting eco-friendly living. With the added convenience of
-              one-year installments, we make luxury living accessible. Safety is
-              paramount, and our villas are equipped with CCTV cameras,
-              providing residents with a secure and technologically advanced
-              haven to cherish.&quot;
-            </p>
-
-            {/* Apartment Cards Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-              {villasData.map((apartment, index) => (
-                <ApartmentCard
-                  key={index}
-                  bedCount={apartment.bedCount}
-                  imagePath={apartment.imagePath}
-                  description={apartment.description}
-                />
-              ))}
+            <div className="w-full h-full mt-2">
+              <Slider {...settings} className="rounded-lg overflow-hidden">
+                {Array.isArray(villasPics) &&
+                  villasPics.map((image, index) => (
+                    <div key={index} className="w-full h-60 sm:h-144 ">
+                      <Image
+                        src={image}
+                        alt={`slide-${index + 1}`}
+                        className="w-full h-full rounded-lg"
+                        priority
+                      />
+                    </div>
+                  ))}
+              </Slider>
             </div>
+            <p className="mt-3 text-xl md:text-2xl text-justify">
+              &quot;Elevate your lifestyle with B&B Builders&apos; modern and
+              luxury villas, that establish variety through the flawless
+              combination of modern architecture and lavish luxuries.&apos; Each
+              house features stunning decor in bedrooms, luxury bathrooms, a
+              large TV area, and a modern kitchen. Our villas, which value
+              long-term sustainability, have installed solar systems for energy
+              efficiency. Experience a level of comfort with flexible one-year
+              installment options that conveniently transform your dream house
+              into a reality. In this smart and secure refuge, security is key,
+              with CCTV cameras providing peace of mind. B&B Builders welcomes
+              you to the future of luxury living, where every detail represents
+              a commitment to remarkable professionalism and
+              affordability.&quot;
+            </p>
           </SectionWithTitle>
         </div>
       </div>

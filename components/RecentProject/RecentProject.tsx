@@ -1,38 +1,54 @@
-// import RecentSlider from '@/components/RecentProject/main_slider';
 import Image from 'next/image';
-import towerTwoPic1 from '../../public/image/tower-2/Tower-2-1.jpg';
+// import { CEOImage } from '@/utils/staff';
+// import { useRouter } from 'next/navigation';
+
 const RecentProject = () => {
+  // const router = useRouter();
+  // const handleClick = () => router.push('/our-projects#tower-two');
   return (
     <>
       <div className="flex flex-col lg:flex-row items-center px-12 bg-white">
         <div className="w-full sm:w-1/2 pt-8">
-          {/* <RecentSlider /> */}
           <Image
-            src={towerTwoPic1}
-            alt="Picture of the tower-2"
-            className="h-full w-full"
+            // src={CEOImage}
+            src="https://static.wixstatic.com/media/ef30b1_5f5d16c25b744036837ec6e392187e8e~mv2.jpg"
+            width={500}
+            height={500}
+            alt="CEO Image"
+            className="h-full w-full shadow-2xl rounded-md"
+            priority
           />
         </div>
         <div className="text-center lg:text-left lg:p-12 lg:pl-24 sm:w-1/2 w-full bg-logo">
-          <h2 className="text-2xl lg:text-4xl font-bold mb-4 lg:mb-8 text-[#c86500]">
-            B & B Tower 2
-          </h2>
-          <p className="text-base lg:text-lg mb-4 text-justify lg:mb-2 text-[#c86500]">
-            B&B Tower 2 embodies the seamless convergence of luxury, comfort,
-            and premier amenities, presenting an unparalleled living experience.
-            This collaborative venture between Emirates Builders and B&B
-            Builders reflects a rare opportunity, showcasing a distinctive blend
-            of commercial and residential facilities. Spanning a total covered
-            area of one kanal, the proposed infrastructure of ground plus 5
-            levels sets the stage for a unique lifestyle. With a three-year easy
-            installment plan, B&B Tower 2 invites those with a penchant for
-            premium living to indulge in the epitome of luxury, strategically
-            located in the picturesque Faisal Town, Islamabad.
+          <div className="flex items-center justify-center lg:justify-start mb-4 lg:mb-8">
+            <h2 className="text-2xl lg:text-4xl font-bold text-[#c86500]">
+              Meet Our CEO
+            </h2>
+            {/* <button className="bg-green-500 sales-animations text-white ml-10 px-10 py-2 text-lg rounded-md shadow-2xl font-semibold">
+              Hot sale
+            </button> */}
+          </div>
+          <p className="text-base lg:text-lg mb-4 text-justify lg:mb-2">
+            Founded in 2019, B&B Builders, underneath my management as an
+            electrical engineer, isn&apos;t always only a industrial creation
+            company; it&apos;s a passion-pushed journey to redefine modern
+            structure. Our dedication to precision and innovation has been the
+            cornerstone of our success. As we keep to shape skylines, B&B
+            Builders stands as a testament to the relentless pursuit of
+            excellence, in which each project reflects our willpower to
+            developing areas that inspire and undergo. Thank you for being a
+            part of our transformative story.
           </p>
+          {/* <button
+            onClick={handleClick}
+            className="inset-x-0 h-full relative bg-[#c86500] border-white-500 rounded-md px-5 py-2 shadow-md shadow-amber-950 hover:scale-90 duration-300"
+          >
+            Learn More
+          </button> */}
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row p-12 bg-gray-100"></div>
     </>
   );
 };
+
 export default RecentProject;

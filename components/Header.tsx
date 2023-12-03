@@ -22,7 +22,7 @@ function Header() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
     <header>
-      <nav className="w-full h-24 shadow-xl bg-white px-4 fixed w-full z-10 top-0 ">
+      <nav className="w-full h-24 shadow-xl bg-white px-4 fixed z-10 top-0 ">
         {/* Desktop Menu */}
         <div className="flex items-center justify-between h-24 px-4">
           <Link href="/">
@@ -51,7 +51,7 @@ function Header() {
                 <Link href="/our-success">Our success</Link>
               </li>
               <li className={styles.navLinks}>
-                <Link href="/who-we-are">Who We Are</Link>
+                <Link href="/our-team">Our Team</Link>
               </li>
               <li className={styles.navLinks}>
                 <Link href="/contact-us">Contact Us</Link>
@@ -113,7 +113,7 @@ function Header() {
                 onClick={() => setMenuOpen(false)}
                 className="py-4 hover:underline hovor:decoration-[#FF7C24] text-amber-700"
               >
-                <Link href="/who-we-are">Who We Are</Link>
+                <Link href="/our-team">Our Team</Link>
               </li>
               <li
                 onClick={() => setMenuOpen(false)}
