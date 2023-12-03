@@ -1,5 +1,5 @@
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import pic from '../../public/image/pic.jpg';
 import pic1 from '../../public/image/pic1.jpg';
 import pic2 from '../../public/image/pic2.jpg';
@@ -7,7 +7,7 @@ import pic3 from '../../public/image/pic3.jpg';
 import pic4 from '../../public/image/pic4.jpg';
 
 const TowerSlider: React.FC = () => {
-  const images = [pic, pic1, pic2, pic3, pic4];
+  // const images = [pic, pic1, pic2, pic3, pic4];
   return (
     <div className="containerTower1">
       <input
@@ -17,7 +17,13 @@ const TowerSlider: React.FC = () => {
         id="s1"
         defaultChecked
       />
-      <input type="radio" name="slider" className="hidden" id="s1" defaultChecked />
+      <input
+        type="radio"
+        name="slider"
+        className="hidden"
+        id="s1"
+        defaultChecked
+      />
       <input type="radio" name="slider" className="hidden" id="s2" />
       <input type="radio" name="slider" className="hidden" id="s3" />
       <input type="radio" name="slider" className="hidden" id="s4" />
@@ -26,7 +32,6 @@ const TowerSlider: React.FC = () => {
       <div className="cards flex">
         {/* Slide 1 */}
         <label htmlFor="s1" id="slide1" className="w-full sm:w-1/2 lg:w-1/5">
-
           <div className="card">
             <div className="image">
               <Image src={pic} alt="pic" />

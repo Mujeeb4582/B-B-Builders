@@ -12,13 +12,13 @@ import Tower11 from '../../public/image/tower-2/Tower-2-11.jpg';
 import Tower12 from '../../public/image/tower-2/Tower-2-2.jpg';
 import Tower13 from '../../public/image/tower-2/Tower-2-3.jpg';
 import TowerSlider from '../../components/Tower1-slider/tower1';
-import VillaSlider from '@/components/Tower1-slider/villas';
+// import VillaSlider from '@/components/Tower1-slider/villas';
 import {
   // tower3Data,
   tower2Pics,
   tower2Data,
   // tower1Data,
-  // villasData,
+  villasData,
 } from '@/utils/cards';
 import Slider from 'react-slick';
 
@@ -192,7 +192,7 @@ const OurProjects = () => {
             </p>
 
             {/* Apartment Cards Section */}
-            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
               {villasData.map((apartment, index) => (
                 <ApartmentCard
                   key={index}
@@ -201,8 +201,8 @@ const OurProjects = () => {
                   description={apartment.description}
                 />
               ))}
-            </div> */}
-            <VillaSlider />
+            </div>
+            {/* <VillaSlider /> */}
           </SectionWithTitle>
         </div>
       </div>
