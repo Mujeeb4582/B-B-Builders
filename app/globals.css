@@ -215,11 +215,11 @@
 
 /* Tower1 slider */
 
-a {
+.containerTower1 a {
   text-decoration: none;
 }
 
-input {
+.containerTower1 input {
   display: none;
 }
 
