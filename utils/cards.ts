@@ -9,9 +9,9 @@ import TopFloorCafeT2_2 from '../public/image/tower-2/Tower-2-cafe-2.jpg';
 import TopFloorCafeT2_3 from '../public/image/tower-2/Tower-2-cafe-3.jpg';
 
 // Tower 3 apartments
-import studioPicT3 from '../public/image/tower-3/Tower-3-studio.jpg';
-import singleBedT3 from '../public/image/tower-3/Tower-3-one-bed-A.jpg';
-import doubleBedT3 from '../public/image/tower-3/Tower-3-two-bed-B.jpg';
+import studioPicT3 from '../public/image/Tower-3/Tower-3-studio.jpg';
+import singleBedT3 from '../public/image/Tower-3/Tower-3-one-bed-A.jpg';
+import doubleBedT3 from '../public/image/Tower-3/Tower-3-two-bed-B.jpg';
 
 // Offices
 import Office1 from '../public/image/Offices/office1.jpg';
