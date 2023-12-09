@@ -3,37 +3,26 @@
 import Image from 'next/image';
 import Slider from 'react-slick';
 import SectionWithTitle from '@/components/SectionWithTitle';
-import TowerSlider from '@/components/Tower1-slider/tower1';
-import { villasPics } from '@/utils/cards';
-// import Villa2 from '../../public/image/Villas/villas2.jpg';
-// import Villa1 from '../../public/image/Villas/villas1.jpg';
-// import VillaBedroom from '../../public/image/Villas/bedroom.jpg';
-// import VillaKitchen from '../../public/image/Villas/Kitchen.jpg';
-// import VillaBathroom from '../../public/image/Villas/bathroom.jpeg';
+import { villa } from '@/utils/images';
+import ApartmentCard from '@/components/Card';
+import { tower1Data } from '@/utils/cards';
 
 const OurSuccess = () => {
-  // const villasPics = [
-  //   Villa2,
-  //   Villa1,
-  //   VillaBedroom,
-  //   VillaKitchen,
-  //   VillaBathroom,
-  // ];
   const settings = {
     infinite: true,
     dots: true,
-    speed: 3000,
+    speed: 500,
     slidesToShow: 1, // Set to 1 to show one slide at a time
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 2000,
   };
   return (
-    <main className="container pt-1 mt-24 p-8 lg:px-24 bg-logo">
+    <main className="container pt-1 mt-24 p-8 lg:px-24 bg-logo bg-black font-sans">
       <div className="backdrop-blur-sm">
         <div id="tower-1">
           <SectionWithTitle title="B & B Tower-1">
-            <p className="mt-3 text-xl md:text-2xl text-justify">
+            <p className="mt-3 text-xl md:text-2xl text-justify text-white">
               B&B-Tower-1 is a master piece Commercial development comprises of
               Retails/Shops and Residential Apartments Developed by B&B Builders
               on Prime location of fast Developing community of C-Block Main
@@ -49,15 +38,24 @@ const OurSuccess = () => {
                 2024.
               </strong>
             </p>
-            <TowerSlider />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+              {tower1Data.map((apartment, index) => (
+                <ApartmentCard
+                  key={index}
+                  bedCount={apartment.bedCount}
+                  imagePath={apartment.imagePath}
+                  description={apartment.description}
+                />
+              ))}
+            </div>
           </SectionWithTitle>
         </div>
         <div id="villas">
           <SectionWithTitle title="B & B Villas">
             <div className="w-full h-full mt-2">
               <Slider {...settings} className="rounded-lg overflow-hidden">
-                {Array.isArray(villasPics) &&
-                  villasPics.map((image, index) => (
+                {Array.isArray(villa) &&
+                  villa.map((image, index) => (
                     <div key={index} className="w-full h-60 sm:h-144 ">
                       <Image
                         src={image}
@@ -69,7 +67,7 @@ const OurSuccess = () => {
                   ))}
               </Slider>
             </div>
-            <p className="mt-3 text-xl md:text-2xl text-justify">
+            <p className="mt-3 text-xl md:text-2xl text-justify text-white">
               &quot;Elevate your lifestyle with B&B Builders&apos; modern and
               luxury villas, that establish variety through the flawless
               combination of modern architecture and lavish luxuries.&apos; Each

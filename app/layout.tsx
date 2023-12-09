@@ -3,8 +3,19 @@ import './globals.css';
 import type { Metadata } from 'next';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Inter } from 'next/font/google';
-const inter = Inter({ subsets: ['latin'] });
+import { Inter, Dancing_Script } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const dancingScript = Dancing_Script({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-dancing-script',
+});
 
 export const metadata: Metadata = {
   title: 'B & B Builders',
@@ -18,9 +29,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+        ></link>
+      </head>
+      <body className={`${inter.variable} ${dancingScript.variable}`}>
         <Header />
         {children}
+        <a
+          href="https://wa.me/923331125174"
+          className="whatsapp_float sales-animations"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa fa-whatsapp whatsapp-icon"></i>
+        </a>
       </body>
     </html>
   );

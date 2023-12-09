@@ -5,19 +5,19 @@ export const CEOImage = CEO;
 
 export const staffData = [
   {
-    name: 'Engr. Muhammad Wassem',
+    name: 'Waseem Bangash',
     image: StaffImage,
     designation: 'Director Construction',
-    degree: 'BS Civil Engineering',
+    degree: 'B-Tech Civil Engineering',
   },
   {
     name: 'Engr. Syed Abdul Wahab',
     image: StaffImage,
     designation: 'GM Administration',
-    degree: 'BS Computer Science',
+    degree: 'BS Computer System Engineer',
   },
   {
-    name: 'Abu Bakar',
+    name: 'Abubakar Bangash',
     image: StaffImage,
     designation: 'GM Sales & Marketing',
     degree: 'BS Project Management',

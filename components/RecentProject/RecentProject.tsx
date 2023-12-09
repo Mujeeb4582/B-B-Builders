@@ -1,13 +1,9 @@
 import Image from 'next/image';
-// import { CEOImage } from '@/utils/staff';
-// import { useRouter } from 'next/navigation';
 
 const RecentProject = () => {
-  // const router = useRouter();
-  // const handleClick = () => router.push('/our-projects#tower-two');
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-center px-12 bg-white">
+      <div className="flex flex-col lg:flex-row items-center px-12 pb-6 bg-black">
         <div className="w-full sm:w-1/2 pt-8">
           <Image
             // src={CEOImage}
@@ -19,14 +15,11 @@ const RecentProject = () => {
             priority
           />
         </div>
-        <div className="text-center lg:text-left lg:p-12 lg:pl-24 sm:w-1/2 w-full bg-logo">
+        <div className="text-center lg:text-left lg:p-12 lg:pl-24 sm:w-1/2 w-full bg-logo text-white lg:h-144">
           <div className="flex items-center justify-center lg:justify-start mb-4 lg:mb-8">
-            <h2 className="text-2xl lg:text-4xl font-bold text-[#c86500]">
-              Meet Our CEO
+            <h2 className="text-3xl lg:text-8xl font-extrabold font-mono text-white pt-10">
+              CEO
             </h2>
-            {/* <button className="bg-green-500 sales-animations text-white ml-10 px-10 py-2 text-lg rounded-md shadow-2xl font-semibold">
-              Hot sale
-            </button> */}
           </div>
           <p className="text-base lg:text-lg mb-4 text-justify lg:mb-2">
             Founded in 2019, B&B Builders, underneath my management as an
@@ -39,12 +32,9 @@ const RecentProject = () => {
             developing areas that inspire and undergo. Thank you for being a
             part of our transformative story.
           </p>
-          {/* <button
-            onClick={handleClick}
-            className="inset-x-0 h-full relative bg-[#c86500] border-white-500 rounded-md px-5 py-2 shadow-md shadow-amber-950 hover:scale-90 duration-300"
-          >
-            Learn More
-          </button> */}
+          <h3 className="text-right text-2xl font-mono lg:text-5xl mt-10">
+            Engr. Syed Abduallah Shah
+          </h3>
         </div>
       </div>
     </>

@@ -1,55 +1,42 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import Slider from 'react-slick';
 import ApartmentCard from '@/components/Card';
 import SectionWithTitle from '@/components/SectionWithTitle';
-import T1_1 from '../../public/image/Tower-1/Tower-1-1.jpg';
-import T1_2 from '../../public/image/Tower-1/Tower-1-1.jpg';
-import T2_1 from '../../public/image/tower-2/Tower-2-2.jpg';
-import T2_2 from '../../public/image/tower-2/Tower-2-3.jpg';
-import T3_1 from '../../public/image/Tower-3/Tower-3-1.jpg';
-import T3_2 from '../../public/image/Tower-3/Tower-3-2.jpg';
-import Villas_1 from '../../public/image/Villas/villas1.jpg';
-import Villas_2 from '../../public/image/Villas/villas2.jpg';
-import TowerSlider from '../../components/Tower1-slider/tower1';
-import { tower2Pics, tower2Data, tower3Pics, villasPics } from '@/utils/cards';
+import { tower1Data, tower2Data, tower3Data } from '@/utils/cards';
+import { tower3, tower2, tower1, villa } from '@/utils/images';
+const ThreeDSlider = dynamic(() => import('@/components/Sliders/3DSlider'), {
+  loading: () => <p className="text-center text-white">Loading...</p>,
+  ssr: false,
+});
+import Slider from 'react-slick';
 
 const OurProjects = () => {
-  const images = [T1_1, T1_2, T2_1, T2_2, T3_1, T3_2, Villas_1, Villas_2];
   const settings = {
     infinite: true,
     dots: true,
-    speed: 3000,
+    speed: 500,
     slidesToShow: 1, // Set to 1 to show one slide at a time
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 2000,
   };
   return (
-    <main className="container pt-1 mt-44 p-8 lg:px-24 bg-logo">
+    <main className="container pt-44 p-8 lg:px-24 bg-logo bg-black font-sans">
       <div className="backdrop-blur-sm">
         <div>
-          {/* Slider component */}
-          <div className="center-container">
-            <div className="slider">
-              {images.map((src, i) => (
-                <span key={i} style={{ '--i': i + 1 } as any}>
-                  <Image src={src} alt={`img${i + 1}`} />
-                </span>
-              ))}
-            </div>
-          </div>
+          <ThreeDSlider />
           <div className="mt-20" id="tower-3">
             <SectionWithTitle
               title="B & B Tower-3"
               showLabel={true}
               news="Pre-Launch"
             >
-              <div className="w-full h-full mt-2">
+              <div className="w-full mt-2">
                 <Slider {...settings} className="rounded-lg overflow-hidden">
-                  {Array.isArray(tower3Pics) &&
-                    tower3Pics.map((image, index) => (
+                  {Array.isArray(tower3) &&
+                    tower3.map((image, index) => (
                       <div key={index} className="w-full h-60 sm:h-144 ">
                         <Image
                           src={image}
@@ -61,7 +48,7 @@ const OurProjects = () => {
                     ))}
                 </Slider>
               </div>
-              <p className="mt-3 text-xl md:text-2xl text-justify">
+              <p className="mt-3 text-xl md:text-2xl text-justify text-white">
                 Get ready to upgrade your living with B&B Builders&apos; future
                 masterpiece that is Tower 3! This architectural masterpiece,
                 located in the heart of boulevard Faisal Hills, Islamabad,
@@ -84,6 +71,17 @@ const OurProjects = () => {
                 stay. Secure an apartment in the future of urban living—where
                 luxury lives outstanding
               </p>
+              {/* Apartment Cards Section */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                {tower3Data.map((apartment, index) => (
+                  <ApartmentCard
+                    key={index}
+                    bedCount={apartment.bedCount}
+                    imagePath={apartment.imagePath}
+                    description={apartment.description}
+                  />
+                ))}
+              </div>
             </SectionWithTitle>
           </div>
         </div>
@@ -95,8 +93,8 @@ const OurProjects = () => {
           >
             <div className="w-full h-full mt-2">
               <Slider {...settings} className="rounded-lg overflow-hidden">
-                {Array.isArray(tower2Pics) &&
-                  tower2Pics.map((image, index) => (
+                {Array.isArray(tower2) &&
+                  tower2.map((image, index) => (
                     <div key={index} className="w-full h-60 sm:h-144 ">
                       <Image
                         src={image}
@@ -108,7 +106,7 @@ const OurProjects = () => {
                   ))}
               </Slider>
             </div>
-            <p className="mt-3 text-xl md:text-2xl text-justify">
+            <p className="mt-3 text-xl md:text-2xl text-justify text-white">
               B&B Tower 2, a distinctive blend of commercial and residential
               excellence set in the heart of Islamabad&apos;s dynamic Civic
               Center Block-C, Faisal Town, invites you to embark on a new urban
@@ -138,7 +136,22 @@ const OurProjects = () => {
         </div>
         <div id="tower-1">
           <SectionWithTitle title="B & B Tower-1">
-            <p className="mt-3 text-xl md:text-2xl text-justify">
+            <div className="w-full h-full mt-2">
+              <Slider {...settings} className="rounded-lg overflow-hidden">
+                {Array.isArray(tower1) &&
+                  tower1.map((image, index) => (
+                    <div key={index} className="w-full h-60 sm:h-144 ">
+                      <Image
+                        src={image}
+                        alt={`slide-${index + 1}`}
+                        className="w-full h-full rounded-lg"
+                        priority
+                      />
+                    </div>
+                  ))}
+              </Slider>
+            </div>
+            <p className="mt-3 text-xl md:text-2xl text-justify text-white">
               B&B-Tower-1 is a master piece Commercial development comprises of
               Retails/Shops and Residential Apartments Developed by B&B Builders
               on Prime location of fast Developing community of C-Block Main
@@ -154,15 +167,24 @@ const OurProjects = () => {
                 2024.
               </strong>
             </p>
-            <TowerSlider />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+              {tower1Data.map((apartment, index) => (
+                <ApartmentCard
+                  key={index}
+                  bedCount={apartment.bedCount}
+                  imagePath={apartment.imagePath}
+                  description={apartment.description}
+                />
+              ))}
+            </div>
           </SectionWithTitle>
         </div>
         <div id="villas">
           <SectionWithTitle title="B & B Villas">
             <div className="w-full h-full mt-2">
               <Slider {...settings} className="rounded-lg overflow-hidden">
-                {Array.isArray(villasPics) &&
-                  villasPics.map((image, index) => (
+                {Array.isArray(villa) &&
+                  villa.map((image, index) => (
                     <div key={index} className="w-full h-60 sm:h-144 ">
                       <Image
                         src={image}
@@ -174,20 +196,26 @@ const OurProjects = () => {
                   ))}
               </Slider>
             </div>
-            <p className="mt-3 text-xl md:text-2xl text-justify">
-              &quot;Elevate your lifestyle with B&B Builders&apos; modern and
-              luxury villas, that establish variety through the flawless
-              combination of modern architecture and lavish luxuries.&apos; Each
-              house features stunning decor in bedrooms, luxury bathrooms, a
-              large TV area, and a modern kitchen. Our villas, which value
-              long-term sustainability, have installed solar systems for energy
-              efficiency. Experience a level of comfort with flexible one-year
-              installment options that conveniently transform your dream house
-              into a reality. In this smart and secure refuge, security is key,
-              with CCTV cameras providing peace of mind. B&B Builders welcomes
-              you to the future of luxury living, where every detail represents
-              a commitment to remarkable professionalism and
-              affordability.&quot;
+            <p className="mt-3 text-xl md:text-2xl text-justify text-white">
+              &quot;Make your way to an era of luxury living with B&B
+              Builders&apos; amazing 8 Marla villas.&quot; Immerse yourself in
+              the heights of elegance as these luxurious homes perfectly combine
+              modern architecture with lavish amenities. Each villa is
+              meticulously designed, with luxurious bedrooms, excellent
+              bathrooms, a comfortable entertainment area, and a modern kitchen.
+              Our villas are installed with solar technology, showing a lifelong
+              commitment to the environment and proving our commitment to
+              sustainable living.At B&B Builders, we understand the value of
+              adaptation in making aspirations a reality. That&apos;s why we
+              offer the flexibility of one-year installment plans, putting your
+              dream home closer than ever before. With your comfort and security
+              as our main focus, our smart and safe comfort features modern CCTV
+              cameras for enhanced peace of mind and a peaceful living
+              experience. We invite you to join us in experiencing the future of
+              wonderful living, where every detail represents our dedication to
+              excellent professionalism and affordability. Welcome to a
+              lifestyle that not only meets expectations, but also creates a new
+              standard for enhanced living.
             </p>
           </SectionWithTitle>
         </div>

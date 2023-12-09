@@ -25,7 +25,7 @@
 }
 
 .title-animations {
-  animation: blink 6s linear infinite;
+  animation: blink 4s linear infinite;
 }
 
 @keyframes blink {
@@ -40,12 +40,12 @@
   }
 }
 .sales-animations {
-  animation: blinks 5s linear infinite;
+  animation: blinks 4s linear infinite;
 }
 
 @keyframes blinks {
   0% {
-    opacity: 0;
+    opacity: 0.5;
     transform: scale(1);
   }
   50% {
@@ -53,7 +53,7 @@
     transform: scale(1.2);
   }
   100% {
-    opacity: 0;
+    opacity: 0.5;
     transform: scale(1);
   }
 }
@@ -73,7 +73,7 @@
 
 .containerCard .card .face.face1 {
   position: relative;
-  background: #c86500;
+  background: black;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -205,12 +205,12 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  object-fit: cover;
+  /* object-fit: cover; */
   transition: 2s;
 }
 
 .slider span:hover img {
-  transform: translateY(-50px) scale(1.2);
+  transform: translateY(-50px) scale(1.1);
 }
 
 /* Tower1 slider */
@@ -395,5 +395,40 @@
 
   .card .image img {
     height: 180px;
+  }
+}
+
+/* for desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
+
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
   }
 }

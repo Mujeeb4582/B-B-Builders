@@ -6,7 +6,7 @@ import { staffData } from '../../utils/staff';
 
 const OurTeam = () => {
   return (
-    <div className="container mx-auto p-12 mt-16 bg-logo">
+    <div className="container mx-auto p-12 mt-16 bg-logo bg-black">
       {/* CEO Section */}
       <div className="grid grid-cols-1 justify-items-center mb-12">
         <div className="bg-gray-200 p-4 rounded-md shadow-lg text-center">
@@ -19,7 +19,7 @@ const OurTeam = () => {
           />
           {/* CEO Message */}
           {/* <div className="flex flex-col md:w-1/2 md:pr-8 md:min-h-full bg-opacity-50 bg-gray content-center justify-center"> */}
-          <h3 className="text-lg md:text-3xl font-semibold mb-2">
+          <h3 className="text-lg md:text-3xl font-semibold mb-2 font-mono">
             Engr. Syed Abdullah Shah
           </h3>
           <p className="md:text-xl text-gray-600">Position: CEO</p>
@@ -43,7 +43,9 @@ const OurTeam = () => {
               height={200}
               className="rounded-md mb-2"
             />
-            <h3 className="text-lg font-semibold mb-2">{staff.name}</h3>
+            <h3 className="text-2xl font-semibold mb-2 font-mono">
+              {staff.name}
+            </h3>
             <p className="text-gray-600">Position: {staff.designation}</p>
             <p className="text-gray-600">Degree: {staff.degree}</p>
           </div>
