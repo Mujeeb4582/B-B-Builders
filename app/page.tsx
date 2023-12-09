@@ -1,25 +1,30 @@
 'use client';
 
 import React from 'react';
-// import Services from '@/components/Services/Services';
+import dynamic from 'next/dynamic';
 import About from '@/components/About/about';
 import RecentProject from '@/components/RecentProject/RecentProject';
 import Projects from '@/components/Projects/projects';
 import CounterUp from '@/components/Counter/index';
-import ReactSlider from '@/components/React-slider';
+const ReactSlider = dynamic(() => import('@/components/Sliders/React-slider'), {
+  loading: () => <p className="text-white">Loading...</p>,
+});
+
 const Home = () => {
   return (
     <>
-      <div className="container mt-24 pt-1">
-        <div className="w-full">
-          <ReactSlider />
+      <div className="bg-black font-sans">
+        <div className="container mt-24 pt-1">
+          <div className="w-full">
+            <ReactSlider />
+          </div>
         </div>
-      </div>
-      <About />
-      <RecentProject />
+        <About />
+        <RecentProject />
 
-      <Projects />
-      <CounterUp />
+        <Projects />
+        <CounterUp />
+      </div>
     </>
   );
 };

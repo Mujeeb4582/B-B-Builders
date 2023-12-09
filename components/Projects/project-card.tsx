@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div className="face face1">
       <div className="content bg-logo h-full w-full flex flex-col items-center justify-center">
         {showLabel && (
-          <div className="text-headingText py-2 px-4 text-2xl font-bold bg-yellow-400 absolute top-3 rounded-lg sales-animations">
+          <div className="text-white py-2 px-4 text-4xl font-extrabold absolute -top-14 sales-animations">
             {news}
           </div>
         )}
