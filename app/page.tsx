@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <div className="bg-black font-sans">
-        <div className="container mt-24 pt-1">
+        <div className="mt-24 pt-1 w-full">
           <div className="w-full">
             <ReactSlider />
           </div>

@@ -1,0 +1,33 @@
+.slick-prev {
+  left: 0;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 50px;
+  z-index: 1;
+}
+.slick-next::before,
+.slick-prev::before {
+  font-size: 72px;
+  // color: #c86500;
+  color: #d2a258;
+}
+
+.slick-arrow {
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slick-next::before,
+  .slick-prev::before {
+    font-size: 42px;
+  }
+  .slick-next {
+    right: 25px;
+    z-index: 1;
+  }
+}

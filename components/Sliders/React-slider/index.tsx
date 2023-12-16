@@ -2,6 +2,7 @@ import Slider from 'react-slick';
 import Image from 'next/image';
 import logo from '../../../public/image/logo.png';
 import { homePageMainSliderImages } from '../../../utils/images';
+import './react-slider.scss';
 
 const ReactSlider = () => {
   const settings = {
@@ -20,7 +21,7 @@ const ReactSlider = () => {
         {Array.isArray(homePageMainSliderImages) &&
           homePageMainSliderImages.map((image, index) => (
             <div key={index}>
-              <div className="w-full flex flex-row h-60 sm:h-144 ">
+              <div className="w-full flex flex-row h-60 sm:h-144">
                 <Image
                   src={image.src}
                   alt={`slide-${index + 1}`}
@@ -40,7 +41,7 @@ const ReactSlider = () => {
                     {image.name}
                   </h1>
                   <h1 className="text-2xl lg:text-4xl font-bold">
-                    Faisal Town
+                    {image.address}
                   </h1>
                   <h1 className="text-2xl lg:text-4xl font-bold">Islamabad</h1>
                 </div>

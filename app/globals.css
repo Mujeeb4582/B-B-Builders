@@ -396,6 +396,14 @@
   .card .image img {
     height: 180px;
   }
+
+  /* .slider {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+  } */
 }
 
 /* for desktop */

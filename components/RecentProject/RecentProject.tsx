@@ -15,22 +15,21 @@ const RecentProject = () => {
             priority
           />
         </div>
-        <div className="text-center lg:text-left lg:p-12 lg:pl-24 sm:w-1/2 w-full bg-logo text-white lg:h-144">
+        <div className="text-center lg:text-left lg:p-12 lg:pl-24 sm:w-1/2 w-full bg-logo text-white xl:min-h-[36rem]">
           <div className="flex items-center justify-center lg:justify-start mb-4 lg:mb-8">
             <h2 className="text-3xl lg:text-8xl font-extrabold font-mono text-white pt-10">
               CEO
             </h2>
           </div>
           <p className="text-base lg:text-lg mb-4 text-justify lg:mb-2">
-            Founded in 2019, B&B Builders, underneath my management as an
-            electrical engineer, isn&apos;t always only a industrial creation
-            company; it&apos;s a passion-pushed journey to redefine modern
-            structure. Our dedication to precision and innovation has been the
-            cornerstone of our success. As we keep to shape skylines, B&B
-            Builders stands as a testament to the relentless pursuit of
-            excellence, in which each project reflects our willpower to
-            developing areas that inspire and undergo. Thank you for being a
-            part of our transformative story.
+            Founded in 2019, B&B Builders, under my management as an electrical
+            engineer, isn&apos;t always only an industrial creation company;
+            it&apos;s a passion-driven journey to redefine modern structure. Our
+            dedication to precision and innovation has been the cornerstone of
+            our success. As we keep to shape skylines, B&B Builders stands as a
+            testament to the relentless pursuit of excellence, in which each
+            project reflects our willpower to develop areas that inspire and
+            undergo. Thank you for being a part of our transformative story.
           </p>
           <h3 className="text-right text-2xl font-mono lg:text-5xl mt-10">
             Engr. Syed Abduallah Shah
